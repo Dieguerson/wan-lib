@@ -1,0 +1,495 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Merriweather', serif;
+    background-color: rgb(216, 199, 169);
+}
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 'nav' 'hero' 'intro' 'snippet' 'story1' 'story2' 'story3' 'footer';
+}
+.flexBox {
+    display: flex;
+}
+header {
+    grid-area: nav;
+    background-color: rgb(38, 38, 38);
+    color: rgb(191, 68, 78);
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header a {
+    color: rgb(191, 68, 78);
+}
+header a:visited {
+    color: rgb(216, 153, 138);
+}
+.logo {
+    width: 50px;
+}
+.menu {
+    width: 25px;
+    padding-right: 5px;
+}
+a strong {
+    display: inline-block;
+    text-align: center;
+    width: 210px;
+}
+.es {
+    width: 190px;
+}
+header ul li a {
+    text-decoration: none;
+    list-style-type: none;
+}
+ul ul.responsiveMenu,
+ul ul.flexBox {
+    display: none;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+ul.responsiveMenu {
+    height: 200px;
+}
+ul > li:hover > ul.responsiveMenu {
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    position: fixed;
+    right: 0;
+}
+header li {
+    display: inline-block;
+}
+.flag {
+    width: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: rgb(38, 38, 38);
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(38, 38, 38);
+    color: rgb(191, 68, 78);
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+footer strong {
+    width: 150px;
+}
+.insta {
+    width: 50px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+/* Index-Inicio */
+.hero {
+    grid-area: hero;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: top;
+}
+section.flexIndex,
+article.flexIndex {
+    width: 95vw;
+    margin: auto;
+}
+.flexIndex {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section.flexIndex {
+    grid-area: intro;
+}
+article.flexIndex {
+    margin-bottom: 5px;
+}
+section.flexIndex > h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.indexImg {
+    border-radius: 50%;
+    border: 0.6vh solid rgb(38, 38, 38);
+    width: 15vw;
+}
+section p {
+    text-align: justify;
+}
+.firstP {
+    width: 75vw;
+    align-self: flex-end;
+}
+.bigText {
+    display: none;
+}
+div.secBreak {
+    width: 90vw;
+    height: 5px;
+    background-color: rgb(191, 80, 80);
+    margin: 5px auto;
+    font-size: 4px;
+    color: rgb(191, 80, 80);
+    text-align: center;
+}
+body > h2 {
+    grid-area: snippet;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.story1 {
+    grid-area: story1;
+    text-align: justify;
+}
+.story2 {
+    grid-area: story2;
+    text-align: justify;
+}
+.story3 {
+    grid-area: story3;
+    text-align: justify;
+}
+article > h3 {
+    font-size: 1.25rem;
+    margin: auto;
+}
+
+/* Storys-Historias */
+article.usTxt {
+    margin: 2vh;
+}
+.usTxt {
+    align-items: center;
+}
+.storyImg {
+    height: 16.7vw;
+    border-radius: 5%;
+}
+.txtRight {
+    text-align: right;
+}
+.txtP {
+    margin: auto;
+}
+
+/* Pricing-Precios */
+table,
+th,
+tr,
+td {
+    border: 3px solid rgb(38, 38, 38);
+    border-collapse: collapse;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+    list-style-position: inside;
+    vertical-align: top;
+}
+td {
+    padding: 25px;
+    width: 25vw;
+}
+ol {
+    list-style: upper-roman;
+}
+ul {
+    list-style-image: url(../Img/pen.svg);
+}
+tr.price td {
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    /* General */
+    body {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            'nav nav nav'
+            'hero hero hero'
+            'intro intro intro'
+            'snippet snippet snippet'
+            'story1 story1 story1'
+            'story2 story2 story2'
+            'story3 story3 story3'
+            'footer footer footer';
+    }
+
+    /* Index-Inicio */
+    .firstP {
+        display: none;
+    }
+    .smallText {
+        display: none;
+    }
+    .bigText {
+        width: 75vw;
+        display: initial;
+    }
+    div.secBreak {
+        width: 95vw;
+    }
+    article.story2 > div {
+        order: 1;
+    }
+    article.story2 > div.bigText {
+        order: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* General */
+    body {
+        grid-template-columns: repeat(6, auto);
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'hero hero hero hero hero hero'
+            'intro intro intro intro intro intro'
+            'snippet snippet snippet snippet snippet snippet'
+            'story1 story1 story1 story1 story1 story1'
+            'story2 story2 story2 story2 story2 story2'
+            'story3 story3 story3 story3 story3 story3'
+            'footer footer footer footer footer footer';
+    }
+    a > strong {
+        position: fixed;
+        left: 50px;
+        top: 7px;
+    }
+    .menu {
+        display: none;
+    }
+    header ul li a {
+        text-decoration: none;
+        list-style-type: none;
+    }
+    ul ul.responsiveMenu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 380px;
+        height: auto;
+        padding: 3px;
+    }
+    ul ul.navEs {
+        width: 410px;
+    }
+    ul ul.flexBox {
+        display: none;
+        flex-direction: column;
+        align-self: flex-end;
+        justify-content: space-between;
+    }
+    ul > li:hover > ul.responsiveMenu {
+        position: sticky;
+        top: 0;
+        right: 5px;
+    }
+    ul.responsiveMenu > li:hover > ul {
+        background-color: rgb(38, 38, 38);
+        display: flex;
+        align-items: flex-start;
+        height: 70px;
+        padding: 3px;
+        position: absolute;
+    }
+    .flag {
+        width: 50px;
+        vertical-align: middle;
+        text-align: right;
+    }
+
+    /* Index-Inicio */
+    section > h1 {
+        font-size: 2rem;
+    }
+    section.flexIndex,
+    article.flexIndex {
+        justify-content: center;
+    }
+    .bigText {
+        margin: 10px;
+        width: 70vw;
+        font-size: 1.3rem;
+    }
+    div.secBreak {
+        width: 90vw;
+    }
+
+    /* Storys-Historias */
+    .storys {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'title title title title title title'
+            '. char1 char2 char3 char4 .'
+            'footer footer footer footer footer footer';
+    }
+    .storys > h1 {
+        grid-area: title;
+        margin-left: 5px;
+    }
+    .storys a {
+        text-decoration: none;
+    }
+    .storys a:visited p {
+        color: rgb(216, 153, 138);
+    }
+    .char1 {
+        grid-area: char1;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .char2 {
+        grid-area: char2;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .char3 {
+        grid-area: char3;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .char1:hover,
+    .char2:hover,
+    .char3:hover {
+        transform: scale(1.1, 1.1) translate(10px, -10px);
+    }
+    .char1 > a > p,
+    .char2 > a > p,
+    .char3 > a > p {
+        position: relative;
+        bottom: 24px;
+        background-color: rgb(38, 38, 38);
+        color: rgb(191, 68, 78);
+        width: 12.55vw;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* Storys Sub-Historias Sub */
+    .storySub {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'title title title title title title'
+            '. longText longText longText longText .'
+            'footer footer footer footer footer footer';
+    }
+    .storySub > h1 {
+        grid-area: title;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .longText {
+        grid-area: longText;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* About Us - Nosotros */
+    .us {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'hero hero hero hero hero hero'
+            'title title title title title title'
+            'woric woric woric whiskers whiskers whiskers'
+            'traner traner traner archive archive archive'
+            'horse horse horse horse horse horse'
+            'footer footer footer footer footer footer';
+    }
+    .us > h1 {
+        grid-area: title;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .woric {
+        grid-area: woric;
+    }
+    .traner {
+        grid-area: traner;
+    }
+    .whiskers {
+        grid-area: whiskers;
+    }
+    .archive {
+        grid-area: archive;
+    }
+    .horse {
+        grid-area: horse;
+    }
+
+    /* Pricing-Precios */
+    .pricing {
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'title title title title title title'
+            'services services services services services services'
+            'aditionals aditionals aditionals aditionals aditionals aditionals'
+            'footer footer footer footer footer footer';
+    }
+    .pricing > h1 {
+        grid-area: title;
+        margin-left: 5px;
+    }
+    .services {
+        grid-area: services;
+    }
+    .aditionals {
+        grid-area: aditionals;
+    }
+
+    /* Contact-Contacto */
+    .contact {
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'title title title title title title'
+            'form form form form form form'
+            'footer footer footer footer footer footer';
+    }
+    .contact > h1 {
+        grid-area: title;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .form {
+        grid-area: form;
+        margin: auto;
+        padding: 10px;
+    }
+    fieldset {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,38 @@
+.intro__img--size{
+    width: 15vw;
+}
+.intro__break--size{
+    width: 90vw;
+    height: 5px;
+    font-size: 4px;
+}
+.intro__text--hide{
+    display: none;
+}
+.intro__text--size{
+    width: 75%;
+}
+.carousel--size{
+    max-height: 45vh;
+}
+.carousel__img--size{
+    max-height: 45vh;
+    margin: auto;
+}
+.carousel__caption--border{
+    text-shadow: -1px 0 rgb(216, 153, 138), 0 1px rgb(216, 153, 138), 1px 0 rgb(216, 153, 138), 0 -1px rgb(216, 153, 138);
+}
+
+@media only screen and (min-width: 576px) {
+    .intro__text--display{
+        display: none;
+    }
+    .intro__text--hide{
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .intro__text--size {
+        width: 65%;
+    }
+}

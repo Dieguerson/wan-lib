@@ -1,0 +1,5 @@
+Useragent: *
+Disallow: /siteMap.html
+Disallow: /sitioMapa.html
+Disallow: /404.html
+Disallow: /404Es.html
