@@ -1,7 +1,4 @@
-package.json
-node_modules/
 *.ai
 *.temp
 *.prettierignore
-package-lock.json
 .vscode/
