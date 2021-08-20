@@ -12,13 +12,11 @@
 .intro__text--size{
     width: 75%;
 }
-.carousel--size{
-    max-width: 100%;
-    height: auto;
-}
 .carousel__img--size{
-    max-height: 45vh;
-    margin: auto;
+    min-width: 100%;
+}
+.carousel__img--border{
+    border-radius: 10%;
 }
 .carousel__caption--border{
     text-shadow: -1px 0 rgb(216, 153, 138), 0 1px rgb(216, 153, 138), 1px 0 rgb(216, 153, 138), 0 -1px rgb(216, 153, 138);
