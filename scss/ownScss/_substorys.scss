@@ -8,3 +8,12 @@
 .story__img--format{
     border-radius: 5%;
 }
+.character__table--border{
+    border: 2px solid rgba(38, 38, 38, 1);
+    border-collapse: collapse;
+}
+@media only screen and (min-width: 768px) {
+    .character--position{
+        top: 0.5vh;
+    }
+}
