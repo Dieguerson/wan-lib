@@ -7616,7 +7616,11 @@ table {
 
 @media only screen and (min-width: 768px) {
   .character--position {
-    top: 0.5vh; } }
+    top: 0.5vh; }
+  .character--size {
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: 50% 0; } }
 
 /* Nosotros */
 .us__img--size {
