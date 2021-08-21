@@ -1,0 +1,10 @@
+.card--size{
+    min-width: 145px;
+}
+.card__img--size{
+    width: 16.3vw;
+    min-width: 140px;
+}
+.card--transform:hover{
+    transform: scale(1.02, 1.02) translate(10px, -10px);
+}

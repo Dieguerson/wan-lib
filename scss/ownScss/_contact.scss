@@ -1,0 +1,10 @@
+$btnWidth: 60px;
+$btnHeight: 30px;
+
+@mixin btnSize{
+    width: $btnWidth;
+    height: $btnHeight;
+}
+.form__btn--size{
+    @include btnSize;
+}

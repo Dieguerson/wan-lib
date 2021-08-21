@@ -3,4 +3,3 @@
 *.prettierignore
 .vscode/
 node_modules/
-scss/

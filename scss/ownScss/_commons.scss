@@ -1,0 +1,40 @@
+.body--size{
+    height: auto;
+    min-height: 100vh;
+}
+.logo--size{
+    width: 50px;
+}
+.hero--size{
+    height: 30vh;
+}
+.hero{
+    object-fit: cover;
+}
+.hero--format{
+    @extend .hero;
+    object-position: top;
+}
+.text__paragraph--align{
+    text-align: justify;
+}
+.carousel__img--size{
+    min-width: 100%;
+}
+.carousel__img--border{
+    border-radius: 10%;
+}
+.carousel__caption--border{
+    text-shadow: -1px 0 rgb(216, 153, 138), 0 1px rgb(216, 153, 138), 1px 0 rgb(216, 153, 138), 0 -1px rgb(216, 153, 138);
+}
+@media only screen and (min-width: 992px) {
+    .w-lg-75{
+        width: 75% !important;
+    }
+    .w-lg-50{
+        width: 50% !important;
+    }
+    .w-lg-25{
+        width: 25% !important;
+    }
+}

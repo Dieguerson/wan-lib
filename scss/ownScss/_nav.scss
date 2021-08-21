@@ -1,0 +1,18 @@
+$navSize: 255px;
+.nav__link--color:visited{
+    color: rgba(216, 153, 138, 1) !important;
+}
+.nav__brand--size{
+    width: $navSize;
+}
+.nav__brandEs--size{
+    width: $navSize - 40px;
+}
+.nav--z-index{
+    z-index: 100;
+}
+@media only screen and (min-width: 992px) {
+    .nav__list--size{
+        width: 447px;
+    }
+}
