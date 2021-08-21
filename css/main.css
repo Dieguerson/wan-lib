@@ -7522,6 +7522,15 @@ textarea.form-control-lg {
 .text__paragraph--align {
   text-align: justify; }
 
+.carousel__img--size {
+  min-width: 100%; }
+
+.carousel__img--border {
+  border-radius: 10%; }
+
+.carousel__caption--border {
+  text-shadow: -1px 0 #d8998a, 0 1px #d8998a, 1px 0 #d8998a, 0 -1px #d8998a; }
+
 @media only screen and (min-width: 992px) {
   .w-lg-75 {
     width: 75% !important; }
@@ -7569,15 +7578,6 @@ table {
 .intro__text--size {
   width: 75%; }
 
-.carousel__img--size {
-  min-width: 100%; }
-
-.carousel__img--border {
-  border-radius: 10%; }
-
-.carousel__caption--border {
-  text-shadow: -1px 0 #d8998a, 0 1px #d8998a, 1px 0 #d8998a, 0 -1px #d8998a; }
-
 @media only screen and (min-width: 576px) {
   .intro__text--display {
     display: none; }
@@ -7617,7 +7617,7 @@ table {
 @media only screen and (min-width: 768px) {
   .character--position {
     top: 0.5vh; }
-  .character--size {
+  .character--format {
     max-height: 50vh;
     object-fit: cover;
     object-position: 50% 0; } }

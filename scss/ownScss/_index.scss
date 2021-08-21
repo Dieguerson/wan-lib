@@ -12,15 +12,6 @@
 .intro__text--size{
     width: 75%;
 }
-.carousel__img--size{
-    min-width: 100%;
-}
-.carousel__img--border{
-    border-radius: 10%;
-}
-.carousel__caption--border{
-    text-shadow: -1px 0 rgb(216, 153, 138), 0 1px rgb(216, 153, 138), 1px 0 rgb(216, 153, 138), 0 -1px rgb(216, 153, 138);
-}
 
 @media only screen and (min-width: 576px) {
     .intro__text--display{
