@@ -7561,7 +7561,7 @@ table {
 
 @media only screen and (min-width: 992px) {
   .nav__list--size {
-    width: 447px; } }
+    width: 453px; } }
 
 /* Inicio */
 .intro__img--size {
@@ -7613,6 +7613,11 @@ table {
 .character__table--border {
   border: 2px solid #262626;
   border-collapse: collapse; }
+
+.substories__break--size {
+  width: 90%;
+  height: 5px;
+  font-size: 4px; }
 
 @media only screen and (min-width: 768px) {
   .character--position {
