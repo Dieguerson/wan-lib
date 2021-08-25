@@ -1,8 +1,14 @@
 .error__img--size{
-    width: 80vw;
+    max-width: 80vw;
+    max-height: 50vh;
 }
 .error__img--format{
     border-radius: 5%;
+}
+.error__break--size{
+    width: 90%;
+    height: 5px;
+    font-size: 4px;
 }
 @media only screen and (min-width: 576px){
     .error__img--size{
