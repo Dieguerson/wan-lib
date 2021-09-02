@@ -7526,7 +7526,7 @@ textarea.form-control-lg {
   min-width: 100%; }
 
 .carousel__img--border {
-  border-radius: 10%; }
+  border-radius: 50px; }
 
 .carousel__caption--border {
   text-shadow: -1px 0 #d8998a, 0 1px #d8998a, 1px 0 #d8998a, 0 -1px #d8998a; }
@@ -7559,7 +7559,15 @@ table {
 .nav--z-index {
   z-index: 100; }
 
+.offcanvas {
+  width: 120px; }
+
 @media only screen and (min-width: 992px) {
+  .nav__list--visibility {
+    visibility: visible;
+    position: unset;
+    transform: unset;
+    width: unset; }
   .nav__list--size {
     width: 453px; } }
 
@@ -7607,9 +7615,6 @@ table {
   max-width: 400px;
   max-height: 600px; }
 
-.story__img--format {
-  border-radius: 5%; }
-
 .character__table--border {
   border: 2px solid #262626;
   border-collapse: collapse; }
@@ -7632,7 +7637,7 @@ table {
   width: 16.6vw; }
 
 .us__img--format {
-  border-radius: 5%; }
+  border-radius: 50px; }
 
 /* Precios */
 .table__text--position {
@@ -7664,7 +7669,7 @@ table {
   max-height: 50vh; }
 
 .error__img--format {
-  border-radius: 5%; }
+  border-radius: 50px; }
 
 .error__break--size {
   width: 90%;

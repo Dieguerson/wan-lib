@@ -11,7 +11,16 @@ $navSize: 255px;
 .nav--z-index{
     z-index: 100;
 }
+.offcanvas{
+    width: 120px;
+}
 @media only screen and (min-width: 992px) {
+    .nav__list--visibility{
+        visibility: visible;
+        position: unset;
+        transform: unset;
+        width: unset;
+    }
     .nav__list--size{
         width: 453px;
     }
