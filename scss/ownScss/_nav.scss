@@ -16,7 +16,7 @@ $navSize: 255px;
 }
 @media only screen and (min-width: 992px) {
     .nav__list--visibility{
-        visibility: visible;
+        visibility: visible !important;
         position: unset;
         transform: unset;
         width: unset;
