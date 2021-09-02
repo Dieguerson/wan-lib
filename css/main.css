@@ -7533,11 +7533,11 @@ textarea.form-control-lg {
 
 @media only screen and (min-width: 992px) {
   .w-lg-75 {
-    width: 75% !important; }
+    width: 75%; }
   .w-lg-50 {
-    width: 50% !important; }
+    width: 50%; }
   .w-lg-25 {
-    width: 25% !important; } }
+    width: 25%; } }
 
 /* Fuentes */
 body {
@@ -7548,7 +7548,7 @@ table {
 
 /* Nav */
 .nav__link--color:visited {
-  color: #d8998a !important; }
+  color: #d8998a; }
 
 .nav__brand--size {
   width: 255px; }
@@ -7661,7 +7661,7 @@ table {
   text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626; }
 
 .map__link--color:visited {
-  color: #d8998a !important; }
+  color: #d8998a; }
 
 /* 404*/
 .error__img--size {
