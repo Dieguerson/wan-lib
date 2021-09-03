@@ -11,8 +11,11 @@ $navSize: 205px;
 .nav--z-index{
     z-index: 100;
 }
-.offcanvas{
+.nav__sidemenu--size{
     width: 120px;
+}
+.position{
+    opacity: 0.7;
 }
 @media only screen and (min-width: 576px) {
     .nav__brand--justify{

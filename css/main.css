@@ -7549,6 +7549,9 @@ table {
 .nav__brandFont--size {
   font-size: 0.9rem; }
 
+.nav__langFont--size {
+  font-size: 0.8rem; }
+
 @media only screen and (min-width: 576px) {
   .nav__brandFont--size {
     font-size: unset; } }
@@ -7566,8 +7569,11 @@ table {
 .nav--z-index {
   z-index: 100; }
 
-.offcanvas {
+.nav__sidemenu--size {
   width: 120px; }
+
+.position {
+  opacity: 0.7; }
 
 @media only screen and (min-width: 576px) {
   .nav__brand--justify {

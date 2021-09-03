@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
         <link rel="icon" href="img/wax.svg">
         <title>The Wandering Librarian</title>
@@ -13,7 +13,7 @@
     <body class="bg-secondary">
         <header class="position-sticky top-0">
             <nav class="navbar navbar-expand-lg p-0 bg-custom container-fluid z-index-100 bg-dark px-sm-3 py-sm-2">
-                <div class="container-fluid p-2">
+                <div class="container-fluid p-2 pb-1">
                     <div class="container-fluid d-flex justify-content-between p-0 m-0">
                         <a href="index.html"><img src="img/wax.svg" class="logo--size" alt="Logo"></a>
                         <a class="navbar-brand nav__brandFont--size align-self-center text-center nav__brand--justify text-wrap p-0 m-0 active nav__link--color nav__brand--size" href="index.html"><strong>The Wandering Librarian Woric Leatherbound</strong></a>
@@ -21,9 +21,9 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
-                    <div class="offcanvas offcanvas-start navbar-collapse navbarSupportedContent bg-dark nav__list--visibility">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__list--size justify-content-lg-end align-items-md-center">
-                            <li class="nav-item align">
+                    <div class="offcanvas offcanvas-start navbar-collapse navbarSupportedContent bg-dark nav__list--visibility nav__sidemenu--size">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__list--size justify-content-lg-end align-items-lg-center px-3">
+                            <li class="nav-item">
                                 <a class="nav-link active nav__link--color" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown bg-dark">
@@ -32,7 +32,7 @@
                                     <span class="px-1 nav-link color-primary dropdown-toggle dropdown-toggle-split" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <span class="visually-hidden">Toggle Dropdown</span>
                                     </span>
-                                <ul class="dropdown-menu bg-dark border-0">
+                                <ul class="dropdown-menu bg-dark border-primary">
                                     <li>
                                         <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories.html">All Stories</a>
                                     </li>
@@ -69,7 +69,7 @@
                                 <a class="nav-link active nav__link--color" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="inicio.html">
+                                <a class="nav-link d-none d-lg-block" href="inicio.html">
                                     <img src="img/español.jpg" alt="Español">
                                 </a>
                             </li>
@@ -77,6 +77,9 @@
                     </div>
                 </div>
             </nav>
+            <div class="d-flex justify-content-end">
+                <a class="d-lg-none position nav-link active nav__link--color nav__langFont--size border border-primary rounded-pill p-1 position-fixed bg-dark m-1" href="inicio.html">Español</a>
+            </div>
         </header>
         <img src="img/infiniteArchive.jpg" alt="The Infinite Archive" class="w-100 hero--size hero--format">
         <section class="fs-6 d-flex justify-content-center align-items-center flex-wrap m-0">
