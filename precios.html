@@ -12,50 +12,49 @@
     </head>
     <body class="bg-secondary">
         <div class="d-flex vh-100 flex-column justify-content-between">
-            <header class="w-100">
-                <nav class="navbar navbar-expand-lg p-0 bg-custom container-fluid z-index-100 bg-dark">
-                    <div class="container-fluid p-0">
-                        <div class="container-fluid d-flex justify-content-between p-0">
-                            <div class="nav__brandEs--size d-flex flex-nowrap m-0 p-0">
-                                <a href="inicio.html"><img src="img/wax.svg" class="logo--size" alt="Logo"></a>
-                                <a class="navbar-brand fs-6 text-center text-wrap p-0 m-0 active nav__link--color d-inline-block" href="inicio.html"><strong>El Librero Errante Woric Leatherbound</strong></a>
-                            </div>
-                            <button class="navbar-dark navbar-toggler p-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <header class="position-sticky top-0 nav--z-index">
+                <nav class=" container-fluid navbar navbar-expand-lg bg-dark p-0">
+                    <div class="container-fluid p-2 pb-1">
+                        <div class="container-fluid d-flex justify-content-between p-0 m-0">
+                            <a href="inicio.html"><img src="img/wax.svg" class="logo--size" alt="Logo"></a>
+                            <a class="navbar-brand active align-self-center text-center text-wrap p-0 m-0 nav__brandEs--size nav__brandFont--size nav__brand--justify nav__link--color" href="inicio.html"><strong>El Librero Errante Woric Leatherbound</strong></a>
+                            <button class="navbar-dark navbar-toggler shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse navbarSupportedContent bg-dark">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__list--size justify-content-lg-end align-items-center">
-                                <li class="nav-item align">
+                        <div class="offcanvas offcanvas-start navbar-collapse navbarSupportedContent bg-dark border-0 nav__sidemenu--size nav__list--visibility">
+                            <ul class="navbar-nav justify-content-lg-end align-items-lg-center px-3 px-lg-0 me-auto mb-2 mb-lg-0 nav__list--size">
+                                <li class="nav-item">
                                     <a class="nav-link active nav__link--color" aria-current="page" href="inicio.html">Inicio</a>
                                 </li>
-                                <li class="nav-item dropdown bg-dark">
-                                    <a class="nav-link dropdown-toggle active nav__link--color" href="historias.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Historias</a>
-                                    <ul class="dropdown-menu bg-dark">
-                                        <li>
-                                            <a class="dropdown-item link-primary bg-dark active nav__link--color" href="historias.html">Todas las Historias</a>
-                                        </li>
-                                        <li><hr class="dropdown-divider link-primary"></li>
-                                        <li>
-                                            <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/grimBronEs.html">- Grimund Bronzeheart</a>
-                                        </li>
-                                        <li><hr class="dropdown-divider link-primary"></li>
-                                        <li>
-                                            <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/liZhuEs.html">- Li Zhu</a>
-                                        </li>
-                                        <li><hr class="dropdown-divider link-primary"></li>
-                                        <li>
-                                            <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/dainThunEs.html">- Dain Thundermaster</a>
-                                        </li>
-                                        <li><hr class="dropdown-divider link-primary"></li>
-                                        <li>
-                                            <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/bharashEs.html">- Bharash</a>
-                                        </li>
-                                        <li><hr class="dropdown-divider link-primary"></li>
-                                        <li>
-                                            <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/bratBersEs.html">- Bratoslav Bersk</a>
-                                        </li>
-                                    </ul>
+                                <li class="nav-item dropdown bg-dark rounded">
+                                    <div class="btn-group">
+                                        <a class="nav-link active nav__link--color" href="historias.html">Historias</a>
+                                        <span class="nav-link dropdown-toggle dropdown-toggle-split color-primary px-1 ps-lg-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </span>
+                                        <ul class="dropdown-menu bg-dark border-primary nav__stories--size">
+                                            <li>
+                                                <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/grimBronEs.html">- Grimund Bronzeheart</a>
+                                            </li>
+                                            <li><hr class="dropdown-divider link-primary"></li>
+                                            <li>
+                                                <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/liZhuEs.html">- Li Zhu</a>
+                                            </li>
+                                            <li><hr class="dropdown-divider link-primary"></li>
+                                            <li>
+                                                <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/dainThunEs.html">- Dain Thundermaster</a>
+                                            </li>
+                                            <li><hr class="dropdown-divider link-primary"></li>
+                                            <li>
+                                                <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/bharashEs.html">- Bharash</a>
+                                            </li>
+                                            <li><hr class="dropdown-divider link-primary"></li>
+                                            <li>
+                                                <a class="dropdown-item link-primary bg-dark active nav__link--color" href="stories/bratBersEs.html">- Bratoslav Bersk</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active nav__link--color" href="nosotros.html">Nosotros</a>
@@ -67,14 +66,17 @@
                                     <a class="nav-link active nav__link--color" href="contacto.html">Contacto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pricing.html">
-                                        <img src="img/ingles.jpg" alt="Inglés">
+                                    <a class="nav-link d-none d-lg-block" href="pricing.html">
+                                        <img class="rounded" src="img/ingles.jpg" alt="English">
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+                <div class="d-flex justify-content-end">
+                    <a class="nav-link active position-fixed d-lg-none bg-dark border-primary rounded-pill p-1 m-1 nav__link--color nav__langFont--size border nav__lang--opacity" href="pricing.html">English</a>
+                </div>
             </header>
             <h1 class="mx-2">Precios</h1>
             <section class="d-lg-none m-3 flex-grow-1">
