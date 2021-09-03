@@ -7588,12 +7588,15 @@ table {
 
 @media only screen and (min-width: 992px) {
   .nav__list--visibility {
+    /*Important necesario para pisar la propiedad Visibility setteada por Bootstrap mediante JS*/
     visibility: visible !important;
     position: unset;
     transform: unset;
     width: unset; }
   .nav__list--size {
-    width: 456px; } }
+    width: 456px; }
+  .nav__stories--size {
+    overflow: unset; } }
 
 /* Inicio */
 .intro__img--size {

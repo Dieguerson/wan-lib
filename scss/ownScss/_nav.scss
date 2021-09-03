@@ -32,6 +32,7 @@ $navSize: 205px;
 }
 @media only screen and (min-width: 992px) {
     .nav__list--visibility{
+        /*Important necesario para pisar la propiedad Visibility setteada por Bootstrap mediante JS*/
         visibility: visible !important;
         position: unset;
         transform: unset;
@@ -39,5 +40,8 @@ $navSize: 205px;
     }
     .nav__list--size{
         width: 456px;
+    }
+    .nav__stories--size{
+        overflow: unset;
     }
 }
