@@ -7546,21 +7546,33 @@ body {
 table {
   font-family: "Roboto", sans-serif; }
 
+.nav__brandFont--size {
+  font-size: 0.9rem; }
+
+@media only screen and (min-width: 576px) {
+  .nav__brandFont--size {
+    font-size: unset; } }
+
 /* Nav */
 .nav__link--color:visited {
   color: #d8998a; }
 
 .nav__brand--size {
-  width: 255px; }
+  width: 205px; }
 
 .nav__brandEs--size {
-  width: 215px; }
+  width: 165px; }
 
 .nav--z-index {
   z-index: 100; }
 
 .offcanvas {
   width: 120px; }
+
+@media only screen and (min-width: 576px) {
+  .nav__brand--justify {
+    position: fixed;
+    left: 78px; } }
 
 @media only screen and (min-width: 992px) {
   .nav__list--visibility {

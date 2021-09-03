@@ -1,4 +1,4 @@
-$navSize: 255px;
+$navSize: 205px;
 .nav__link--color:visited{
     color: rgba(216, 153, 138, 1);
 }
@@ -13,6 +13,12 @@ $navSize: 255px;
 }
 .offcanvas{
     width: 120px;
+}
+@media only screen and (min-width: 576px) {
+    .nav__brand--justify{
+        position: fixed;
+        left: 78px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .nav__list--visibility{
