@@ -7575,6 +7575,10 @@ table {
 .position {
   opacity: 0.7; }
 
+.nav__stories--size {
+  max-height: 75vh;
+  overflow: scroll; }
+
 @media only screen and (min-width: 576px) {
   .nav__brand--justify {
     position: fixed;
