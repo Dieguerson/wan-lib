@@ -6,15 +6,15 @@ $navSize: 205px;
     width: $navSize;
 }
 .nav__brandEs--size{
-    width: $navSize - 40px;
+    width: $navSize - 50px;
 }
 .nav--z-index{
-    z-index: 100;
+    z-index: 10000;
 }
 .nav__sidemenu--size{
     width: 120px;
 }
-.position{
+.nav__lang--opacity{
     opacity: 0.7;
 }
 .nav__stories--size{
@@ -24,7 +24,10 @@ $navSize: 205px;
 @media only screen and (min-width: 576px) {
     .nav__brand--justify{
         position: fixed;
-        left: 78px;
+        left: 60px;
+    }
+    .nav__brandEs--size{
+        width: $navSize - 40px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -35,6 +38,6 @@ $navSize: 205px;
         width: unset;
     }
     .nav__list--size{
-        width: 453px;
+        width: 456px;
     }
 }

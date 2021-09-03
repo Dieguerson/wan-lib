@@ -7564,15 +7564,15 @@ table {
   width: 205px; }
 
 .nav__brandEs--size {
-  width: 165px; }
+  width: 155px; }
 
 .nav--z-index {
-  z-index: 100; }
+  z-index: 10000; }
 
 .nav__sidemenu--size {
   width: 120px; }
 
-.position {
+.nav__lang--opacity {
   opacity: 0.7; }
 
 .nav__stories--size {
@@ -7582,7 +7582,9 @@ table {
 @media only screen and (min-width: 576px) {
   .nav__brand--justify {
     position: fixed;
-    left: 78px; } }
+    left: 60px; }
+  .nav__brandEs--size {
+    width: 165px; } }
 
 @media only screen and (min-width: 992px) {
   .nav__list--visibility {
@@ -7591,7 +7593,7 @@ table {
     transform: unset;
     width: unset; }
   .nav__list--size {
-    width: 453px; } }
+    width: 456px; } }
 
 /* Inicio */
 .intro__img--size {
