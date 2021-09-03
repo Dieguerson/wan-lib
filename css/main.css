@@ -7577,7 +7577,7 @@ table {
 
 .nav__stories--size {
   max-height: 75vh;
-  overflow: scroll; }
+  overflow: auto; }
 
 @media only screen and (min-width: 576px) {
   .nav__brand--justify {
