@@ -7531,6 +7531,17 @@ textarea.form-control-lg {
 .carousel__caption--border {
   text-shadow: -1px 0 #d8998a, 0 1px #d8998a, 1px 0 #d8998a, 0 -1px #d8998a; }
 
+.break--size {
+  width: 90vw;
+  height: 3px;
+  font-size: 2px; }
+
+@media only screen and (min-width: 768px) {
+  .text--size {
+    max-width: 65ch; }
+  .break--size {
+    width: 75vw; } }
+
 @media only screen and (min-width: 992px) {
   .w-lg-75 {
     width: 75%; }
@@ -7538,6 +7549,14 @@ textarea.form-control-lg {
     width: 50%; }
   .w-lg-25 {
     width: 25%; } }
+
+@media only screen and (min-width: 1200px) {
+  .break--size {
+    width: 50vw; } }
+
+@media only screen and (min-width: 1400px) {
+  .break--size {
+    width: 45vw; } }
 
 /* Fuentes */
 body {
@@ -7601,27 +7620,6 @@ table {
 /* Inicio */
 .intro__img--size {
   width: 15vw; }
-
-.intro__break--size {
-  width: 90vw;
-  height: 5px;
-  font-size: 4px; }
-
-.intro__text--hide {
-  display: none; }
-
-.intro__text--size {
-  width: 75%; }
-
-@media only screen and (min-width: 576px) {
-  .intro__text--display {
-    display: none; }
-  .intro__text--hide {
-    display: inline-block; } }
-
-@media only screen and (min-width: 992px) {
-  .intro__text--size {
-    width: 65%; } }
 
 /* Historias */
 .card--size {

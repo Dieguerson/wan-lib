@@ -27,6 +27,19 @@
 .carousel__caption--border{
     text-shadow: -1px 0 rgb(216, 153, 138), 0 1px rgb(216, 153, 138), 1px 0 rgb(216, 153, 138), 0 -1px rgb(216, 153, 138);
 }
+.break--size{
+    width: 90vw;
+    height: 3px;
+    font-size: 2px;
+}
+@media only screen and (min-width: 768px) {
+    .text--size{
+        max-width: 65ch;
+    }
+    .break--size{
+        width: 75vw;
+    }
+}
 @media only screen and (min-width: 992px) {
     .w-lg-75{
         width: 75%;
@@ -36,5 +49,15 @@
     }
     .w-lg-25{
         width: 25%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .break--size{
+        width: 50vw;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .break--size{
+        width: 45vw;
     }
 }
