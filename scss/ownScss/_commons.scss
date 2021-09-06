@@ -5,13 +5,13 @@
 .logo--size{
     width: 50px;
 }
-.hero--size{
-    height: 30vh;
-}
 .hero{
     object-fit: cover;
 }
-.hero--format{
+.hero--size{
+    height: 30vh;
+}
+.hero--fit{
     @extend .hero;
     object-position: top;
 }

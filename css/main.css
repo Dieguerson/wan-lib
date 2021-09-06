@@ -7510,13 +7510,13 @@ textarea.form-control-lg {
 .logo--size {
   width: 50px; }
 
+.hero, .hero--fit {
+  object-fit: cover; }
+
 .hero--size {
   height: 30vh; }
 
-.hero, .hero--format {
-  object-fit: cover; }
-
-.hero--format {
+.hero--fit {
   object-position: top; }
 
 .text__paragraph--align {
