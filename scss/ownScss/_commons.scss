@@ -21,11 +21,11 @@
 .text__paragraph--align{
     text-align: justify;
 }
-.carousel__img--size{
-    min-width: 100%;
+.card--border{
+    border-radius: 50px 0;
 }
-.carousel__img--border{
-    border-radius: 50px;
+.card__img--border{
+    border-radius: 55px 0 50px 0;
 }
 .carousel__caption--border{
     text-shadow: -1px 0 rgb(216, 153, 138), 0 1px rgb(216, 153, 138), 1px 0 rgb(216, 153, 138), 0 -1px rgb(216, 153, 138);

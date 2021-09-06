@@ -1372,10 +1372,10 @@ $breadcrumb-border-radius:          null !default;
 // Carousel
 
 // scss-docs-start carousel-variables
-$carousel-control-color:             rgba(38, 38, 38, 1) !default;
+$carousel-control-color:             rgba(191, 68, 78, 1) !default;
 $carousel-control-width:             15% !default;
-$carousel-control-opacity:           .5 !default;
-$carousel-control-hover-opacity:     .9 !default;
+$carousel-control-opacity:           1 !default;
+$carousel-control-hover-opacity:     1 !default;
 $carousel-control-transition:        opacity .15s ease !default;
 
 $carousel-indicator-width:           30px !default;
@@ -1383,7 +1383,7 @@ $carousel-indicator-height:          3px !default;
 $carousel-indicator-hit-area-height: 10px !default;
 $carousel-indicator-spacer:          3px !default;
 $carousel-indicator-opacity:         .5 !default;
-$carousel-indicator-active-bg:       rgba(38, 38, 38, 1) !default;
+$carousel-indicator-active-bg:       rgba(191, 68, 78, 1) !default;
 $carousel-indicator-active-opacity:  1 !default;
 $carousel-indicator-transition:      opacity .6s ease !default;
 
