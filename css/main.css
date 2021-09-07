@@ -7632,6 +7632,14 @@ table {
 .stories__name--display {
   display: none; }
 
+.card__img--size {
+  width: 16.3vw;
+  min-width: 140px; }
+
+.card--size {
+  width: 16.3vw;
+  min-width: 142px; }
+
 @media only screen and (min-width: 1800px) {
   .stories__name--display {
     display: inline; } }
