@@ -7527,10 +7527,10 @@ textarea.form-control-lg {
   text-align: justify; }
 
 .card--border {
-  border-radius: 50px 0; }
+  border-radius: 30px 0; }
 
 .card__img--border {
-  border-radius: 55px 0 50px 0; }
+  border-radius: 35px 0 30px 0; }
 
 .carousel__caption--border {
   text-shadow: -1px 0 #d8998a, 0 1px #d8998a, 1px 0 #d8998a, 0 -1px #d8998a; }
@@ -7626,15 +7626,15 @@ table {
   width: 15vw; }
 
 /* Historias */
-.card--size {
-  min-width: 145px; }
-
-.card__img--size {
-  width: 16.3vw;
-  min-width: 140px; }
-
 .card--transform:hover {
   transform: scale(1.02, 1.02) translate(10px, -10px); }
+
+.stories__name--display {
+  display: none; }
+
+@media only screen and (min-width: 1800px) {
+  .stories__name--display {
+    display: inline; } }
 
 /*Sub-Historias*/
 .story__img--size {
