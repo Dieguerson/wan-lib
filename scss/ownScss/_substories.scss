@@ -1,8 +1,5 @@
 .story__img--size{
     width: 90%;
-    min-width: 250px;
-    max-width: 400px;
-    max-height: 600px;
 }
 .character__table--border{
     border: 2px solid rgba(38, 38, 38, 1);
@@ -18,7 +15,7 @@
         top: 70px;
     }
     .character--format{
-        max-height: 50vh;
+        max-height: 71vh;
         object-fit: cover;
         object-position: 50% 0;
     }

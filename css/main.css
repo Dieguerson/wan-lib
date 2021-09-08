@@ -7646,10 +7646,7 @@ table {
 
 /*Sub-Historias*/
 .story__img--size {
-  width: 90%;
-  min-width: 250px;
-  max-width: 400px;
-  max-height: 600px; }
+  width: 90%; }
 
 .character__table--border {
   border: 2px solid #262626;
@@ -7664,7 +7661,7 @@ table {
   .character--position {
     top: 70px; }
   .character--format {
-    max-height: 50vh;
+    max-height: 71vh;
     object-fit: cover;
     object-position: 50% 0; }
   .character--position {
