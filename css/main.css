@@ -7590,7 +7590,7 @@ table {
   width: 155px; }
 
 .nav--z-index {
-  z-index: 10000; }
+  z-index: 100; }
 
 .nav__sidemenu--size {
   width: 120px; }
