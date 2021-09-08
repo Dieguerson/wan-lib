@@ -20,7 +20,7 @@ $navSize: 205px;
 }
 @media only screen and (min-width: 576px) {
     .nav__brand--justify{
-        position: fixed;
+        position: absolute;
         left: 60px;
     }
     .nav__brandEs--size{

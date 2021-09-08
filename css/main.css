@@ -7529,7 +7529,7 @@ textarea.form-control-lg {
 .card--border {
   border-radius: 30px 0; }
 
-.card__img--border {
+.img--border {
   border-radius: 35px 0 30px 0; }
 
 .carousel__caption--border {
@@ -7604,7 +7604,7 @@ table {
 
 @media only screen and (min-width: 576px) {
   .nav__brand--justify {
-    position: fixed;
+    position: absolute;
     left: 60px; }
   .nav__brandEs--size {
     width: 165px; } }
