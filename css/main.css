@@ -7646,9 +7646,8 @@ table {
 
 /*Sub-Historias*/
 .story__img--size {
-  width: 90vw;
+  width: 90%;
   min-width: 250px;
-  min-height: 330px;
   max-width: 400px;
   max-height: 600px; }
 
@@ -7663,11 +7662,13 @@ table {
 
 @media only screen and (min-width: 768px) {
   .character--position {
-    top: 0.5vh; }
+    top: 70px; }
   .character--format {
     max-height: 50vh;
     object-fit: cover;
-    object-position: 50% 0; } }
+    object-position: 50% 0; }
+  .character--position {
+    position: sticky; } }
 
 /* Nosotros */
 .us__img--size {
