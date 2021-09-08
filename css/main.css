@@ -7655,6 +7655,9 @@ table {
 .substories__linkImg--size {
   width: 35px; }
 
+.substories__next--direction {
+  direction: rtl; }
+
 .substories__break--size {
   width: 90%;
   height: 5px;
