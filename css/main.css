@@ -7660,8 +7660,8 @@ table {
 
 .substories__break--size {
   width: 90%;
-  height: 5px;
-  font-size: 4px; }
+  height: 3px;
+  font-size: 2px; }
 
 @keyframes prevAnim {
   0% {
