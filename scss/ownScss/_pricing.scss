@@ -4,8 +4,11 @@
 .table__ul--style{
     list-style-image: url(../img/pen.svg);
 }
-.accordion--color:focus, .accordion--color:focus-within{
-    border: unset;
-    box-shadow: unset;
-    z-index: unset;
+.card--size{
+    width: 18rem; 
+    height: 270px;
+}
+.card--transform:hover{
+    transform: scale(1.1);
+    cursor: default;
 }
