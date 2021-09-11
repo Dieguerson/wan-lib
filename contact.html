@@ -77,29 +77,73 @@
                 <a class="nav-link active position-absolute d-lg-none bg-dark border-primary rounded-pill p-1 m-1 link--color nav__langFont--size border nav__lang--opacity" href="contacto.html">Español</a>
             </div>
         </header>
-        <h1 class="ms-2">Contact</h1>
-        <form action="" method="GET" class="row w-100 w-lg-75 mx-auto justify-content-center px-1 p-md-0">
-            <fieldset class="col-12 col-lg-9 text-center m-auto">
-                <legend>Personal Data</legend>
+        <h1 class="m-3">Contact</h1>
+        <form action="" method="GET" class="row mx-auto justify-content-end px-3 p-md-0">
+            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
+                <legend class="fw-bold p-1 pt-0">Personal Data</legend>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" name="name" placeholder="Grimund Bronzeheart">
-                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control bg-dark shadow-none border-secondary text-secondary  contact__cursor--color" name="name" placeholder="Grimund Bronzeheart">
+                    <label for="name" class="text-start text-primary">Full Name:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" name="mail" placeholder="grimund@dwarfmail.com">
-                    <label for="mail">Mail</label>
+                    <input type="email" class="form-control bg-dark shadow-none border-secondary" name="mail" placeholder="grimund@dwarfmail.com">
+                    <label for="mail" class="text-start text-primary">Mail:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" name="phone" placeholder="4889-6500">
-                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control bg-dark shadow-none border-secondary" name="phone" placeholder="4889-6500">
+                    <label for="phone" class="text-start text-primary">Phone:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" name="cel" placeholder="+54 9 11-2856-2254">
-                    <label for="cel">Cel</label>
+                    <input type="tel" class="form-control bg-dark shadow-none border-secondary" name="cel" placeholder="+54 9 11-2856-2254">
+                    <label for="cel" class="text-start text-primary">Cel:</label>
                 </div>
             </fieldset>
-            <fieldset class="text-center text-lg-start col-12 col-lg-4 p-0 m-auto">
-                <legend>Services</legend>
+            <!--
+            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
+                <legend class="fw-bold p-1 pt-0">Services</legend>
+
+
+                <div class="container">
+                    <h1>Radio Buttons as Cards</h1>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-4">
+                            <label>
+                                <input type="radio" name="product" class="card-input-element" />
+                                <div class="panel panel-default card-input">
+                                    <div class="panel-heading">Product A</div>
+                                    <div class="panel-body">
+                                    Product specific content
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4">
+                            <label>
+                                <input type="radio" name="product" class="card-input-element" />
+                                <div class="panel panel-default card-input">
+                                    <div class="panel-heading">Product B</div>
+                                    <div class="panel-body">
+                                    Product specific content
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4">
+                            <label>
+                                <input type="radio" name="product" class="card-input-element" />
+                                <div class="panel panel-default card-input">
+                                    <div class="panel-heading">Product C</div>
+                                    <div class="panel-body">
+                                    Product specific content
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                  </div>
+
+
+
                 <div class="mb-1">
                     <input class="form-check-input" type="radio" name="choose_service" value="QS">
                     <label class="form-check-label" for="chooseService">Quick Search (U$D5)</label>
@@ -140,35 +184,35 @@
                         <label class="form-check-label" for="additionals">Character Creation ($8)</label>
                     </div>
             </fieldset>
-            <fieldset class="d-flex flex-wrap justify-content-between">
-                <legend class="w-100 text-center mt-3">Your Idea</legend>
-                <div class="d-inline-block w-100 w-lg-50 mb-3 text-center m-auto">
-                    <legend class="text-center">Gender</legend>
-                    <input class="form-check-input" type="radio" name="gender" value="male">
-                    <label class="form-check-label pe-1" for="gender">Male</label>
-                    <input class="form-check-input" type="radio" name="gender" value="female">
-                    <label class="form-check-label pe-1" for="gender">Female</label>
-                    <input class="form-check-input" type="radio" name="gender" value="other">
-                    <label class="form-check-label pe-1" for="gender">Other</label>
-                    <textarea class="form-control m-auto" name="otro" id="otro" cols="30" rows="10" placeholder="If you chose Other, and want to, tell me which"></textarea>
-                </div>
+-->
+            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 fs-2 p-3 pb-2 bg-success shadow">
+                <legend class="fw-bold p-1 fs-2 pt-0">Your Idea</legend>
                 <div class="d-flex flex-column justify-content-around w-100 w-lg-25 m-auto">
-                    <legend class="text-center">Race</legend>
-                    <select class="form-select mb-3" name="race">
+                    <legend class="fw-bold fs-5 text-start mb-1 ms-n1">Gender:</legend>
+                    <select class="form-select mb-2 bg-dark text-secondary border  border-secondary shadow-sm" name="race" placeholder="race">
                         <option value="none"></option>
-                        <option value="dwarf">Dwarf</option>
-                        <option value="elf">Elf</option>
-                        <option value="halfling">Halfling</option>
-                        <option value="human">Human</option>
-                        <option value="dragonborn">Dragonborn</option>
-                        <option value="gnome">Gnome</option>
-                        <option value="halfElf">Half Elf</option>
-                        <option value="halfOrc">Half Orc</option>
-                        <option value="tiefling">Tiefling</option>
-                        <option value="unknown">Don't Know</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
                     </select>
-                    <legend class="text-center">Class</legend>
-                    <select class="form-select mb-3" name="class">
+                    <textarea class="form-control m-auto mb-4 shadow bg-dark text-secondary" name="otro" rows="2" cols="1" id="otro" placeholder="If you chose Other, and want to, tell me which."></textarea>
+                    <div class="d-flex flex-column justify-content-around w-100 w-lg-25 m-auto">
+                        <legend class="fw-bold fs-5 text-start mb-1 ms-n1">Race:</legend>
+                        <select class="form-select mb-4 bg-dark text-secondary border  border-secondary shadow" name="race" placeholder="race">
+                            <option value="none"></option>
+                            <option value="dwarf">Dwarf</option>
+                            <option value="elf">Elf</option>
+                            <option value="halfling">Halfling</option>
+                            <option value="human">Human</option>
+                            <option value="dragonborn">Dragonborn</option>
+                            <option value="gnome">Gnome</option>
+                            <option value="halfElf">Half Elf</option>
+                            <option value="halfOrc">Half Orc</option>
+                            <option value="tiefling">Tiefling</option>
+                            <option value="unknown">Don't Know</option>
+                        </select>
+                    <legend class="fw-bold fs-5 text-start mb-1 ms-n1">Class:</legend>
+                    <select class="form-select mb-4 bg-dark text-secondary border  border-secondary shadow" name="class">
                         <option value="none"></option>
                         <option value="barbarian">Barbarian</option>
                         <option value="bard">Bard</option>
@@ -184,8 +228,8 @@
                         <option value="wizard">Wizard</option>
                         <option value="unknown">Don´t Know</option>
                     </select>
-                    <legend class="text-center">Background</legend>
-                    <select class="form-select mb-3" name="background">
+                    <legend class="fw-bold fs-5 text-start mb-1 ms-n1">Background:</legend>
+                    <select class="form-select mb-4 bg-dark text-secondary border  border-secondary shadow" name="background">
                         <option value="none"></option>
                         <option value="acolyte">Acolyte</option>
                         <option value="charlatan">Charlatan</option>
@@ -203,8 +247,8 @@
                         <option value="unknown">Don't Know</option>
                     </select>
                 </div>
-                <legend class="w-100 text-center">Write anything you want to add:</legend>
-                <textarea class="form-control" name="idea" id="other" cols="30" rows="10" placeholder="Already know anything about your hero? Want any alternate Race trait or Background? Anything you wish to add, leave it here!"></textarea>
+                <legend class="fw-bold fs-5 text-start mb-1 ms-n1">Want to add anything?</legend>
+                <textarea class="form-control m-auto mb-3 shadow bg-dark text-secondary" name="idea" id="other" rows="6" cols="1" placeholder="Already know anything about your hero? Want any alternate Race trait or Background? Anything you wish to add, leave it here!"></textarea>
             </fieldset>
             <input class="m-2 p-0 btn btn-primary text-dark fw-bold form__btn--size" type="reset" value="Clear">
             <input class="m-2 p-0 btn btn-dark text-primary fw-bold form__btn--size" type="submit" value="Send">
