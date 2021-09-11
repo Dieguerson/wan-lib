@@ -1,6 +1,63 @@
-.us__img--size{
-    width: 16.6vw;
+.us__card--size{
+    width: 95%;
+    max-width: 300px;
 }
-.us__img--format{
-    border-radius: 50px;
+.us__img--size{
+    width: 100%;
+    max-width: 299px;
+}
+.us__img--borderLeft{
+    border-radius: 30px 0 0;
+}
+.us__img--borderRight{
+    border-radius: 30px 0 0;
+}
+.orbo--border{
+    border-radius: 0 0 30px;
+}
+.us__orboCard--size{
+    width: 95%;
+    max-width: 300px;
+}
+.us__orboImg--size{
+    width: 149px;
+    height: 149px;
+}
+@media only screen and (min-width: 768px) {
+    .us__card--size{
+        width: 95%;
+        max-width: 700px;
+    }
+    .us__img--borderRight{
+        border-radius: 0 0 30px;
+    }
+    .us__img--size{
+        max-height: 257px
+    }
+    .card__body--size{
+        width: 50%;
+    }
+    .us__orboCard--size{
+        width: 95%;
+        max-width: 700px;
+    }
+    .us__orboImg--size{
+        height: 160px;
+    }
+    .us__img--borderOrbo{
+        border-radius: 0 0 30px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .card__body--size{
+        width: 25%;
+    }
+    .us__orboCard--size{
+        width: 95%;
+        max-width: 1000px;
+    }
+    .us__orboImg--size{
+        width: auto;
+        height: 257px;
+    }
 }
