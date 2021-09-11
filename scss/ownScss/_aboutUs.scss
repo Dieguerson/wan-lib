@@ -12,9 +12,6 @@
 .us__img--borderRight{
     border-radius: 30px 0 0;
 }
-.orbo--border{
-    border-radius: 0 0 30px;
-}
 .us__orboCard--size{
     width: 95%;
     max-width: 300px;
@@ -32,35 +29,32 @@
         width: 95%;
         max-width: 700px;
     }
+    .us__img--size{
+        max-height: 300px
+    }
     .us__img--borderRight{
         border-radius: 0 0 30px;
-    }
-    .us__img--size{
-        max-height: 257px
-    }
-    .us__orboPic--size{
-        width: unset;
-    }
-    .card__body--size{
-        width: 50%;
     }
     .us__orboCard--size{
         width: 95%;
         max-width: 700px;
+    }
+    .us__orboPic--size{
+        width: unset;
     }
     .us__orboImg--size{
         height: 100%;
         max-width: 160px;
         max-height: 160px;
     }
+    .card__body--size{
+        width: 50%;
+    }
     .us__img--borderOrbo{
         border-radius: 0 0 30px;
     }
 }
 @media only screen and (min-width: 1400px) {
-    .card__body--size{
-        width: 25%;
-    }
     .us__orboCard--size{
         width: 95%;
         max-width: 1000px;
@@ -70,5 +64,8 @@
         height: auto;
         max-width: unset;
         max-height: 257px;
+    }
+    .card__body--size{
+        width: 25%;
     }
 }
