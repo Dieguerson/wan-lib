@@ -7771,9 +7771,13 @@ table {
   width: 95%;
   max-width: 300px; }
 
+.us__orboPic--size {
+  width: 50%; }
+
 .us__orboImg--size {
-  width: 149px;
-  height: 149px; }
+  width: 100%;
+  max-width: 149px;
+  max-height: 149px; }
 
 @media only screen and (min-width: 768px) {
   .us__card--size {
@@ -7783,13 +7787,17 @@ table {
     border-radius: 0 0 30px; }
   .us__img--size {
     max-height: 257px; }
+  .us__orboPic--size {
+    width: unset; }
   .card__body--size {
     width: 50%; }
   .us__orboCard--size {
     width: 95%;
     max-width: 700px; }
   .us__orboImg--size {
-    height: 160px; }
+    height: 100%;
+    max-width: 160px;
+    max-height: 160px; }
   .us__img--borderOrbo {
     border-radius: 0 0 30px; } }
 
@@ -7801,7 +7809,9 @@ table {
     max-width: 1000px; }
   .us__orboImg--size {
     width: auto;
-    height: 257px; } }
+    height: auto;
+    max-width: unset;
+    max-height: 257px; } }
 
 /* Precios */
 .table__text--position {
