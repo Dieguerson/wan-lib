@@ -4279,9 +4279,9 @@ textarea.form-control-lg {
 
 .tooltip-inner {
   max-width: 200px;
-  padding: 0.25rem 0.5rem;
+  padding: 10px 10px 2px 0px;
   color: #fff;
-  text-align: center;
+  text-align: left;
   background-color: #000;
   border-radius: 0.25rem; }
 
@@ -8357,33 +8357,22 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: #bf444e !important;
   caret-color: #bf444e; }
 
-/* Radios
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  
-  /**
-    Component
-  **/
-label {
-  width: 100%; }
+.radio__card--size {
+  width: 215px;
+  height: 135px; }
 
 .card-input-element {
   display: none; }
 
-.card-input {
-  margin: 10px;
-  padding: 00px; }
-
 .card-input:hover {
   cursor: pointer; }
 
-.card-input-element:checked + .card-input {
-  box-shadow: 0 0 1px 1px #2ecc71; }
+.card-input-element + .card-input {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
-/*  Radios */
+.card-input-element:checked + .card-input {
+  box-shadow: 0 0 3px 3px rgba(191, 68, 78, 0.7); }
+
 /* Site Map*/
 .map__link--border {
   text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626; }

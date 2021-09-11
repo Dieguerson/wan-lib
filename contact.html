@@ -82,80 +82,50 @@
             <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
                 <legend class="fw-bold p-1 pt-0">Personal Data</legend>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control bg-dark shadow-none border-secondary text-secondary  contact__cursor--color" name="name" placeholder="Grimund Bronzeheart">
+                    <input type="text" class="form-control bg-dark shadow border-secondary text-secondary  contact__cursor--color" name="name" placeholder="Grimund Bronzeheart">
                     <label for="name" class="text-start text-primary">Full Name:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control bg-dark shadow-none border-secondary text-secondary  contact__cursor--color" name="mail" placeholder="grimund@dwarfmail.com">
+                    <input type="email" class="form-control bg-dark shadow border-secondary text-secondary  contact__cursor--color" name="mail" placeholder="grimund@dwarfmail.com">
                     <label for="mail" class="text-start text-primary">Mail:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control bg-dark shadow-none border-secondary text-secondary  contact__cursor--color" name="phone" placeholder="4889-6500">
+                    <input type="tel" class="form-control bg-dark shadow border-secondary text-secondary  contact__cursor--color" name="phone" placeholder="4889-6500">
                     <label for="phone" class="text-start text-primary">Phone:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control bg-dark shadow-none border-secondary text-secondary  contact__cursor--color" name="cel" placeholder="+54 9 11-2856-2254">
+                    <input type="tel" class="form-control bg-dark shadow border-secondary text-secondary  contact__cursor--color" name="cel" placeholder="+54 9 11-2856-2254">
                     <label for="cel" class="text-start text-primary">Cel:</label>
                 </div>
             </fieldset>
-            <!--
+            
             <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
                 <legend class="fw-bold p-1 pt-0">Services</legend>
-
-
-                <div class="container">
-                    <h1>Radio Buttons as Cards</h1>
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4 col-sm-4">
-                            <label>
-                                <input type="radio" name="product" class="card-input-element" />
-                                <div class="panel panel-default card-input">
-                                    <div class="panel-heading">Product A</div>
-                                    <div class="panel-body">
-                                    Product specific content
-                                    </div>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-sm-4">
-                            <label>
-                                <input type="radio" name="product" class="card-input-element" />
-                                <div class="panel panel-default card-input">
-                                    <div class="panel-heading">Product B</div>
-                                    <div class="panel-body">
-                                    Product specific content
-                                    </div>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-sm-4">
-                            <label>
-                                <input type="radio" name="product" class="card-input-element" />
-                                <div class="panel panel-default card-input">
-                                    <div class="panel-heading">Product C</div>
-                                    <div class="panel-body">
-                                    Product specific content
-                                    </div>
-                                </div>
-                            </label>
-                        </div>
+                <label class="card-input p-2 m-auto">
+                    <input type="radio" name="product" class="card-input-element">
+                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border  radio__card--size border border-secondary">
+                        <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>500 to 1000 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
+                        <div class="p-3 pt-1 fs-4">Quick Search</div>
+                        <div class="p-4 pt-0 fs-5">U$D 5</div>
                     </div>
-                  </div>
-
-
-
-                <div class="mb-1">
-                    <input class="form-check-input" type="radio" name="choose_service" value="QS">
-                    <label class="form-check-label" for="chooseService">Quick Search (U$D5)</label>
-                </div>
-                <div class="mb-1">
-                    <input class="form-check-input" type="radio" name="choose_service" value="DS">
-                    <label class="form-check-label" for="chooseService">Detailed Search (U$D10)</label>
-                </div>
-                <div class="mb-1">
-                    <input class="form-check-input" type="radio" name="choose_service" value="FS">
-                    <label class="form-check-label" for="chooseService">Full on Search (U$D15)</label>
-                </div>
+                </label>
+                <label class="card-input p-2 m-auto">
+                    <input type="radio" name="product" class="card-input-element">
+                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border radio__card--size border border-secondary">
+                        <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>1000 to 1500 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
+                        <div class="p-3 pt-1 fs-4">Detailed Search</div>
+                        <div class="p-4 pt-0 fs-5">U$D 10</div>
+                    </div>
+                </label>
+                <label class="card-input p-2 mb-2 m-auto">
+                    <input type="radio" name="product" class="card-input-element">
+                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border  radio__card--size border border-secondary">
+                        <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol>
+                            <li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>1500 to 2000 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
+                        <div class="p-3 pt-1 fs-4">Full on Search</div>
+                        <div class="p-4 pt-0 fs-5">U$D 15</div>
+                    </div>
+                </label>
             </fieldset>
             <fieldset class="text-center text-lg-start col-12 col-lg-6 p-0">
                     <legend>Additionals</legend>
@@ -184,7 +154,7 @@
                         <label class="form-check-label" for="additionals">Character Creation ($8)</label>
                     </div>
             </fieldset>
--->
+
             <fieldset class="col-12 text-center border border-2 rounded-3 my-2 fs-2 p-3 pb-2 bg-success shadow">
                 <legend class="fw-bold p-1 fs-2 pt-0">Your Idea</legend>
                 <div class="d-flex flex-column justify-content-around w-100 w-lg-25 m-auto">
@@ -260,5 +230,11 @@
             <strong class="w-100 text-end footer__text--size footer__font--size">Developed by Diego Gabrielli</strong>
         </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script> 
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </body>
 </html>
