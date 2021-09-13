@@ -8361,79 +8361,74 @@ table {
   width: 60px;
   height: 30px; }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+.contact__input--color:-webkit-autofill,
+.contact__input--color:-webkit-autofill:hover,
+.contact__input--color:-webkit-autofill:focus,
+.contact__input--color:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: #bf444e !important;
   caret-color: #bf444e; }
 
-.input__bg {
+.contact__cardRadio--bg {
   background-position: right; }
 
-.radio__card--size {
+.contact__cardRadio--size {
   width: 222px;
   height: 135px; }
 
-.card-input-element {
+.contact__cardRadioElement {
   display: none; }
 
-.card-input:hover {
+.contact__cardRadio:hover {
   cursor: pointer; }
 
-.card-input-element + .card-input {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
-
-.card-input-element:checked + .card-input {
+.contact__cardRadioElement:checked + .contact__cardRadio {
   background: linear-gradient(to left, #262626 50%, #bf444e 50%);
   background-position: left;
   background-size: 200%;
   transition: .2s ease-out; }
 
-.fieldset--border {
+.contact__fieldset--border {
   border-radius: 30px 0; }
 
 .button--border {
   border-radius: 10px 0; }
 
-.check__borderA {
+.contact__cardCheck--border {
   position: relative;
   top: 5px;
   right: -95px;
   z-index: 30000; }
 
-.check__card--size {
+.contact__cardCheck--size {
+  width: 222px;
   height: 170px; }
 
-.check__cardBody {
+.contact__checkCardBody {
   top: -24px; }
-
-.check__card {
-  width: 222px; }
 
 ul li label {
   height: 300px;
   z-index: 100;
   cursor: pointer; }
 
-.check__card .check__cardBody {
+.contact__cardCheck .contact__checkCardBody {
   z-index: 2; }
 
-.check__card .check__cardBg,
-.check__card .check__cardToggle {
+.contact__cardCheck .contact__checkCard--bg,
+.contact__cardCheck .contact__checkCardToggle {
   width: 36px;
   height: 36px;
   top: 10px;
   left: 10px; }
 
-.check__card .check__cardBg {
+.contact__cardCheck .contact__checkCard--bg {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   -webkit-transform: scale(1);
   transform: scale(1); }
 
-.check__card .check__cardToggle span {
+.contact__cardCheck .contact__checkCardToggle span {
   width: 20px;
   margin-left: -10px;
   height: 1px;
@@ -8442,29 +8437,29 @@ ul li label {
   -webkit-transform: rotate(-270deg);
   transform: rotate(-270deg); }
 
-.check__card .check__cardToggle span:first-child {
+.contact__cardCheck .contact__checkCardToggle span:first-child {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-.check__card .check__cardCancel {
+.contact__cardCheck .contact__checkCardCancel {
   bottom: -80px;
   width: 100%;
   -webkit-transition: all 0.3s cubic-bezier(0.5, -0.8, 0.5, 1.8);
   transition: all 0.3s cubic-bezier(0.5, -0.8, 0.5, 1.8); }
 
-.check__card input[type=checkbox]:checked ~ .check__cardBody .check__cardToggle span {
+.contact__cardCheck input[type=checkbox]:checked ~ .contact__checkCardBody .contact__checkCardToggle span {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg); }
 
-.check__card input[type=checkbox]:checked ~ .check__cardBody .check__cardToggle span:first-child {
+.contact__cardCheck input[type=checkbox]:checked ~ .contact__checkCardBody .contact__checkCardToggle span:first-child {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg); }
 
-.check__card input[type=checkbox]:checked ~ .check__cardBg {
+.contact__cardCheck input[type=checkbox]:checked ~ .contact__checkCard--bg {
   -webkit-transform: scale(25);
   transform: scale(25); }
 
-.check__card input[type=checkbox]:checked ~ .check__cardBody .check__cardCancel {
+.contact__cardCheck input[type=checkbox]:checked ~ .contact__checkCardBody .contact__checkCardCancel {
   bottom: -35px; }
 
 /* Site Map*/
