@@ -78,8 +78,8 @@
             </div>
         </header>
         <h1 class="m-3">Contact</h1>
-        <form action="" method="GET" class="row mx-auto justify-content-end px-3 p-md-0">
-            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
+        <form action="" method="POST" class="row mx-auto justify-content-end px-3 p-md-0 w-sm-75 w-lg-50 w-xxl-25">
+            <fieldset class="col-12 text-center border border-2 my-2 p-3 pb-2 bg-success shadow fieldset--border">
                 <legend class="fw-bold p-1 pt-0">Personal Data</legend>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control bg-dark shadow border-secondary text-secondary  contact__cursor--color" name="name" placeholder="Grimund Bronzeheart">
@@ -98,11 +98,11 @@
                     <label for="cel" class="text-start text-primary">Cel:</label>
                 </div>
             </fieldset>
-            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
+            <fieldset class="col-12 text-center border border-2 my-2 p-3 pb-2 bg-success shadow fieldset--border">
                 <legend class="fw-bold p-1 pt-0">Services</legend>
                 <label class="card-input p-2 m-auto">
                     <input type="radio" name="services" class="card-input-element">
-                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border  radio__card--size border border-secondary">
+                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border  radio__card--size border border-secondary input__bg">
                         <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>500 to 1000 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
                         <div class="p-3 pt-1 fs-4">Quick Search</div>
                         <div class="p-4 pt-0 fs-5">U$D 5</div>
@@ -110,7 +110,7 @@
                 </label>
                 <label class="card-input p-2 m-auto">
                     <input type="radio" name="services" class="card-input-element">
-                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border radio__card--size border border-secondary">
+                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border radio__card--size border border-secondary input__bg">
                         <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>1000 to 1500 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
                         <div class="p-3 pt-1 fs-4">Detailed Search</div>
                         <div class="p-4 pt-0 fs-5">U$D 10</div>
@@ -118,16 +118,16 @@
                 </label>
                 <label class="card-input p-2 mb-2 m-auto">
                     <input type="radio" name="services" class="card-input-element">
-                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border  radio__card--size border border-secondary">
+                    <div class="d-flex flex-column card-input bg-dark text-secondary card--border  radio__card--size border border-secondary input__bg">
                         <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>1500 to 2000 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
                         <div class="p-3 pt-1 fs-4">Full on Search</div>
                         <div class="p-4 pt-0 fs-5">U$D 15</div>
                     </div>
                 </label>
             </fieldset>
-            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
+            <fieldset class="d-flex flex-wrap justify-content-between col-12 text-center border border-2 my-2 p-3 pb-3 bg-success shadow fieldset--border">
                 <legend class="fw-bold p-1 pt-0">Additionals</legend>
-                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                <ul class="check__card p-2 px-0 mb-0 m-auto">
                     <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
                         <input type="checkbox" id="bleh" name="additionals" value="SP" class="d-none">
                         <label for="bleh" class="radio d-block position-absolute w-100 m-auto"></label>
@@ -148,7 +148,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                <ul class="check__card p-2 px-0 mb-0 m-auto">
                     <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
                         <input type="checkbox" id="bleh1" name="additionals" value="SP" class="d-none">
                         <label for="bleh1" class="radio d-block position-absolute w-100 m-auto"></label>
@@ -169,7 +169,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                <ul class="check__card p-2 px-0 mb-0 m-auto">
                     <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
                         <input type="checkbox" id="bleh2" name="additionals" value="SP" class="d-none">
                         <label for="bleh2" class="radio d-block position-absolute w-100 m-auto"></label>
@@ -190,7 +190,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                <ul class="check__card p-2 px-0 mb-0 m-auto">
                     <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
                         <input type="checkbox" id="bleh3" name="additionals" value="SP" class="d-none">
                         <label for="bleh3" class="radio d-block position-absolute w-100 m-auto"></label>
@@ -211,7 +211,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                <ul class="check__card p-2 px-0 mb-0 m-auto">
                     <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
                         <input type="checkbox" id="bleh4" name="additionals" value="SP" class="d-none">
                         <label for="bleh4" class="radio d-block position-absolute w-100 m-auto"></label>
@@ -232,7 +232,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                <ul class="check__card p-2 px-0 mb-0 m-auto">
                     <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
                         <input type="checkbox" id="bleh5" name="additionals" value="SP" class="d-none">
                         <label for="bleh5" class="radio d-block position-absolute w-100 m-auto"></label>
@@ -254,7 +254,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 fs-2 p-3 pb-2 bg-success shadow">
+            <fieldset class="col-12 text-center border border-2 my-2 fs-2 p-3 pb-2 bg-success shadow fieldset--border">
                 <legend class="fw-bold p-1 fs-2 pt-0">Your Idea</legend>
                 <div class="d-flex flex-column justify-content-around w-100 w-lg-25 m-auto">
                     <legend class="fw-bold fs-5 text-start mb-1 ms-n1">Gender:</legend>
@@ -319,8 +319,8 @@
                 <legend class="fw-bold fs-5 text-start mb-1 ms-n1">Want to add anything?</legend>
                 <textarea class="form-control m-auto mb-3 shadow bg-dark text-secondary" name="idea" id="other" rows="6" cols="1" placeholder="Already know anything about your hero? Want any alternate Race trait or Background? Anything you wish to add, leave it here!"></textarea>
             </fieldset>
-            <input class="m-2 p-0 btn btn-primary text-dark fw-bold form__btn--size" type="reset" value="Clear">
-            <input class="m-2 p-0 btn btn-dark text-primary fw-bold form__btn--size" type="submit" value="Send">
+            <input class="m-2 p-0 btn btn-primary text-dark fw-bold form__btn--size  button--border" type="reset" value="Clear">
+            <input class="m-2 p-0 btn btn-dark text-primary fw-bold form__btn--size  button--border" type="submit" value="Send">
         </form>
         <footer class="d-flex flex-wrap justify-content-between p-1 bg-dark text-primary align-items-center">
             <a href="index.html"><img src="img/wax.svg" alt="Logo" class="logo--size"></a>
