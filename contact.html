@@ -119,41 +119,141 @@
                 <label class="card-input p-2 mb-2 m-auto">
                     <input type="radio" name="services" class="card-input-element">
                     <div class="d-flex flex-column card-input bg-dark text-secondary card--border  radio__card--size border border-secondary">
-                        <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol>
-                            <li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>1500 to 2000 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
+                        <i class="align-self-end bi bi-info-circle pe-2 pt-1" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>A chat to talk ideas and round up concepts.</li><li>Research on the Setting in which the campaign will happen.</li><li>1500 to 2000 word long story.</li><li>Up to 2 (Two) corrections</li></ol>"></i>
                         <div class="p-3 pt-1 fs-4">Full on Search</div>
                         <div class="p-4 pt-0 fs-5">U$D 15</div>
                     </div>
                 </label>
             </fieldset>
-            <fieldset class="text-center text-lg-start col-12 col-lg-6 p-0">
-                    <legend>Additionals</legend>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="BR">
-                        <label class="form-check-label" for="additionals">Spells (U$D1)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="BF">
-                        <label class="form-check-label" for="additionals">Character Sheet (U$D2)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Character Progression up to level 8 (U$D3)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Character Progression up to level 16 (U$D6)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Character Progression up to level 20 (U$D7)</label>
-                    </div>
-                    <div class="mb-1"> 
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Character Creation ($8)</label>
-                    </div>
+            <fieldset class="col-12 text-center border border-2 rounded-3 my-2 p-3 pb-2 bg-success shadow">
+                <legend class="fw-bold p-1 pt-0">Additionals</legend>
+                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                    <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
+                        <input type="checkbox" id="bleh" name="additionals" value="SP" class="d-none">
+                        <label for="bleh" class="radio d-block position-absolute w-100 m-auto"></label>
+                        <i class="align-self-end bi bi-info-circle text-secondary pe-2 pt-1 check__borderA" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>A PDF with your character's spells up to level 10.</li></ul>"></i>
+                        <div class="check__cardBg bg-primary rounded-circle position-absolute m-auto"></div>
+                        <div class="check__cardBody text-secondary position-relative m-auto w-100">
+                            <div class="check__cardToggle bg-primary position-relative rounded-circle">
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                            </div>
+                            <div class="check__cardBody-in mt-3">
+                                <h3 class="p-3 pt-0 pb-2 fs-4">Spells</h3>
+                                <h3 class="pt-0 fs-5">U$D 1</h3>
+                                <p class="check__card-description">
+                                </p>
+                            </div>
+                            <div class="px-2 check__cardCancel border-1 border-top border-bottom bg-dark text-center text-secondary position-absolute ">CANCEL</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                    <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
+                        <input type="checkbox" id="bleh1" name="additionals" value="SP" class="d-none">
+                        <label for="bleh1" class="radio d-block position-absolute w-100 m-auto"></label>
+                        <i class="align-self-end bi bi-info-circle text-secondary pe-2 pt-1 check__borderA" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>A PDF with everything you need to fill your character sheet. So you don't have to throw dice or read books.</li></ul>"></i>
+                        <div class="check__cardBg bg-primary rounded-circle position-absolute m-auto"></div>
+                        <div class="check__cardBody text-secondary position-relative m-auto w-100">
+                            <div class="check__cardToggle bg-primary position-relative rounded-circle">
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                            </div>
+                            <div class="check__cardBody-in mt-3">
+                                <h3 class="p-3 pt-0 pb-2 fs-4">Character Sheet</h3>
+                                <h3 class="pt-0 fs-5">U$D 2</h3>
+                                <p class="check__card-description">
+                                </p>
+                            </div>
+                            <div class="px-2 check__cardCancel border-1 border-top border-bottom bg-dark text-center text-secondary position-absolute ">CANCEL</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                    <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
+                        <input type="checkbox" id="bleh2" name="additionals" value="SP" class="d-none">
+                        <label for="bleh2" class="radio d-block position-absolute w-100 m-auto"></label>
+                        <i class="align-self-end bi bi-info-circle text-secondary pe-2 pt-1 check__borderA" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>A PDF with everything you need to fill your character sheet. So you don't have to throw dice or read books.</li><li>On that same PDF you'll find the progression, level by level, up to level 8.</li></ul>"></i>
+                        <div class="check__cardBg bg-primary rounded-circle position-absolute m-auto"></div>
+                        <div class="check__cardBody text-secondary position-relative m-auto w-100">
+                            <div class="check__cardToggle bg-primary position-relative rounded-circle">
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                            </div>
+                            <div class="check__cardBody-in mt-3">
+                                <h3 class="p-3 pt-0 pb-2 fs-4">Level 8 Sheet</h3>
+                                <h3 class="pt-0 fs-5">U$D 3</h3>
+                                <p class="check__card-description">
+                                </p>
+                            </div>
+                            <div class="px-2 check__cardCancel border-1 border-top border-bottom bg-dark text-center text-secondary position-absolute ">CANCEL</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                    <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
+                        <input type="checkbox" id="bleh3" name="additionals" value="SP" class="d-none">
+                        <label for="bleh3" class="radio d-block position-absolute w-100 m-auto"></label>
+                        <i class="align-self-end bi bi-info-circle text-secondary pe-2 pt-1 check__borderA" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>A PDF with everything you need to fill your character sheet. So you don't have to throw dice or read books.</li><li>On that same PDF you'll find the progression, level by level, up to level 16.</li></ul>"></i>
+                        <div class="check__cardBg bg-primary rounded-circle position-absolute m-auto"></div>
+                        <div class="check__cardBody text-secondary position-relative m-auto w-100">
+                            <div class="check__cardToggle bg-primary position-relative rounded-circle">
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                            </div>
+                            <div class="check__cardBody-in mt-3">
+                                <h3 class="p-3 pt-0 pb-2 fs-4">Level 16 Sheet</h3>
+                                <h3 class="pt-0 fs-5">U$D 6</h3>
+                                <p class="check__card-description">
+                                </p>
+                            </div>
+                            <div class="px-2 check__cardCancel border-1 border-top border-bottom bg-dark text-center text-secondary position-absolute ">CANCEL</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                    <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
+                        <input type="checkbox" id="bleh4" name="additionals" value="SP" class="d-none">
+                        <label for="bleh4" class="radio d-block position-absolute w-100 m-auto"></label>
+                        <i class="align-self-end bi bi-info-circle text-secondary pe-2 pt-1 check__borderA" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>A PDF with everything you need to fill your character sheet. So you don't have to throw dice or read books.</li><li>On that same PDF you'll find the progression, level by level, up to level 20.</li></ul>"></i>
+                        <div class="check__cardBg bg-primary rounded-circle position-absolute m-auto"></div>
+                        <div class="check__cardBody text-secondary position-relative m-auto w-100">
+                            <div class="check__cardToggle bg-primary position-relative rounded-circle">
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                            </div>
+                            <div class="check__cardBody-in mt-3">
+                                <h3 class="p-3 pt-0 pb-2 fs-4">Level 20 Sheet</h3>
+                                <h3 class="pt-0 fs-5">U$D 7</h3>
+                                <p class="check__card-description">
+                                </p>
+                            </div>
+                            <div class="px-2 check__cardCancel border-1 border-top border-bottom bg-dark text-center text-secondary position-absolute ">CANCEL</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="check__card p-2 px-0 mb-1 m-auto">
+                    <li class="bg-dark overflow-hidden position-relative card--border check__card--size border border-secondary shadow">
+                        <input type="checkbox" id="bleh5" name="additionals" value="SP" class="d-none">
+                        <label for="bleh5" class="radio d-block position-absolute w-100 m-auto"></label>
+                        <i class="align-self-end bi bi-info-circle text-secondary pe-2 pt-1 check__borderA" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>A character built from the ground up.</li><li>Choose your service, pick any additional you want. I take care of the rest!</li></ul>"></i>
+                        <div class="check__cardBg bg-primary rounded-circle position-absolute m-auto"></div>
+                        <div class="check__cardBody text-secondary position-relative m-auto w-100">
+                            <div class="check__cardToggle bg-primary position-relative rounded-circle">
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary"></span>
+                            </div>
+                            <div class="check__cardBody-in mt-3">
+                                <h3 class="p-3 pt-0 pb-2 fs-4">Full Creation</h3>
+                                <h3 class="pt-0 fs-5">U$D 8</h3>
+                                <p class="check__card-description">
+                                </p>
+                            </div>
+                            <div class="px-2 check__cardCancel border-1 border-top border-bottom bg-dark text-center text-secondary position-absolute ">CANCEL</div>
+                        </div>
+                    </li>
+                </ul>
             </fieldset>
-
             <fieldset class="col-12 text-center border border-2 rounded-3 my-2 fs-2 p-3 pb-2 bg-success shadow">
                 <legend class="fw-bold p-1 fs-2 pt-0">Your Idea</legend>
                 <div class="d-flex flex-column justify-content-around w-100 w-lg-25 m-auto">

@@ -32,3 +32,76 @@ input:-webkit-autofill:active {
 .card-input-element:checked + .card-input {
     box-shadow: 0 0 3px 3px rgba(191, 68, 78, 0.7);
 }
+
+.check__borderA{
+    position: relative;
+    top: 5px;
+    right: -95px;
+        z-index: 30000;
+}
+.check__card--size{
+    height: 170px;
+}
+.check__cardBody{
+    top: -24px;
+}
+
+.check__card{
+    width: 215px;
+}
+ul li label {
+	height: 300px;
+	z-index: 100;
+	cursor: pointer;
+}
+.check__card .check__cardBody {
+	z-index: 2;
+}
+.check__card .check__cardBg,
+.check__card .check__cardToggle {
+	width: 36px;
+	height: 36px;
+	top: 10px;
+	left: 10px;
+}
+.check__card .check__cardBg {
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	-webkit-transform:scale(1);
+	transform:scale(1);
+}
+.check__card .check__cardToggle span {
+	width: 20px;
+	margin-left: -10px;
+	height: 1px;
+	-webkit-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+	-webkit-transform: rotate(-270deg);
+	transform: rotate(-270deg);
+}
+.check__card .check__cardToggle span:first-child {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.check__card .check__cardCancel {
+	bottom: -80px;
+	width: 100%;
+	-webkit-transition: all .3s cubic-bezier(0.5, -0.8, 0.5, 1.8);
+	transition: all .3s cubic-bezier(0.5, -0.8, 0.5, 1.8);
+}
+.check__card input[type=checkbox]:checked ~ .check__cardBody .check__cardToggle span {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.check__card input[type=checkbox]:checked ~ .check__cardBody .check__cardToggle span:first-child {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.check__card input[type=checkbox]:checked ~ .check__cardBg {
+	-webkit-transform:scale(25);
+	transform:scale(25);
+}
+.check__card input[type=checkbox]:checked ~ .check__cardBody .check__cardCancel {
+	bottom: -35px;
+    
+}
