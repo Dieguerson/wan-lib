@@ -1,4 +1,4 @@
-Useragent: *
+User-agent: *
 Disallow: /siteMap.html
 Disallow: /sitioMapa.html
 Disallow: /404.html
