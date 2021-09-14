@@ -1,20 +1,20 @@
-.story__img--size{
-    width: 90%;
-}
 .character__table--border{
     border: 2px solid rgba(38, 38, 38, 1);
     border-collapse: collapse;
 }
+.story__img--size{
+    width: 90%;
+}
 .substories__linkImg--size{
     width: 35px;
-}
-.substories__prev--direction{
-    direction: rtl;
 }
 .substories__break--size{
     width: 90%;
     height: 3px;
     font-size: 2px;
+}
+.substories__prev--direction{
+    direction: rtl;
 }
 @keyframes prevAnim{
     0%   {transform: translate(0px);}
@@ -68,14 +68,12 @@
 }
 @media only screen and (min-width: 768px) {
     .character--position{
+        position: sticky;
         top: 70px;
     }
     .character--format{
         max-height: 71vh;
         object-fit: cover;
         object-position: 50% 0;
-    }
-    .character--position{
-        position: sticky;
     }
 }
