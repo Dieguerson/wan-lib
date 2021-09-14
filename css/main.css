@@ -7934,6 +7934,12 @@ table {
 .pricing__accordion--borderBottom {
   border-radius: 0 0 30px !important; }
 
+.pricing__accordion--shadowSmall {
+  box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.05); }
+
+.pricing__accordion--shadow {
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
 /* Contacto */
 .form__btn--size {
   width: 60px;

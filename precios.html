@@ -11,14 +11,14 @@
         <meta name="author" content="Diego Gabrielli">
     </head>
     <body class="bg-secondary">
-        <a href="" id="top"></a>
+        <a href="" id="top" class"d-none"></a>
         <header class="position-sticky top-0 nav--z-index">
             <nav class=" container-fluid navbar navbar-expand-lg bg-dark p-0">
                 <div class="container-fluid p-2 pb-1">
                     <div class="container-fluid d-flex justify-content-between p-0 m-0">
                         <a href="inicio.html"><img src="img/wax.svg" class="logo--size" alt="Logo"></a>
                         <a class="navbar-brand active align-self-center text-center text-wrap p-0 m-0 nav__brandEs--size nav__brandFont--size nav__brand--justify link--color" href="inicio.html"><strong>El Librero Errante Woric Leatherbound</strong></a>
-                        <button class="navbar-dark navbar-toggler shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target=".navbarSupportedContent" aria-controls=".navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-dark navbar-toggler shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
@@ -81,11 +81,9 @@
         <h1 class="m-3">Precios</h1>
         <section class="d-md-none m-3">
             <div class="accordion m-1 mb-2 pricing__accordion--borderTop">
-                <div class="accordion-item bg-secondary border-0 shadow-sm pricing__accordion--borderBottom">
-                    <h3 class="accordion-header">
-                        <div class="container-fluid bg-success fs-6 fw-bold text-dark shadow-none py-3 ps-3 pb-0 pricing__accordion--borderTop">
-                            <em>Servicios</em>
-                        </div>
+                <div class="accordion-item bg-secondary border-0 pricing__accordion--shadowSmall pricing__accordion--borderBottom">
+                    <h3 class="accordion-header container-fluid bg-success fs-6 fw-bold text-dark shadow-none py-3 ps-3 pb-0 pricing__accordion--borderTop">
+                        <em>Servicios</em>
                     </h3>
                     <div class="accordion-collapse bg-success pricing__accordion--borderBottom">
                         <div class="accordion-body pt-3">
@@ -147,11 +145,9 @@
                 </div>
             </div>
             <div class="accordion m-1 mb-2 pricing__accordion--borderTop">
-                <div class="accordion-item bg-secondary border-0 shadow pricing__accordion--borderBottom">
-                    <h3 class="accordion-header">
-                        <div class="container-fluid bg-success fs-6 fw-bold text-dark shadow-none py-3 ps-3 pb-0 pricing__accordion--borderTop">
-                            <em>Adicionales</em>
-                        </div>
+                <div class="accordion-item bg-secondary border-0 pricing__accordion--shadow pricing__accordion--borderBottom">
+                    <h3 class="accordion-header container-fluid bg-success fs-6 fw-bold text-dark shadow-none py-3 ps-3 pb-0 pricing__accordion--borderTop">
+                        <em>Adicionales</em>
                     </h3>
                     <div class="accordion-collapse bg-success pricing__accordion--borderBottom">
                         <div class="accordion-body pt-3">
@@ -256,40 +252,34 @@
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Búsqueda Rápida: $ 500</h5>
-                        <p class="card-text">
-                            <ol class="m-2">
-                                <li>Charla previa para comentar ideas y cerrar conceptos.</li>
-                                <li>Investigación del Setting en el que se va a desarrollar la historia.</li>
-                                <li>Historia entre 500 y 1000 palabras.</li>
-                                <li>Hasta 2 (Dos) correcciones posteriores.</li>
-                            </ol>
-                        </p>
+                        <ol class="card-text m-2">
+                            <li>Charla previa para comentar ideas y cerrar conceptos.</li>
+                            <li>Investigación del Setting en el que se va a desarrollar la historia.</li>
+                            <li>Historia entre 500 y 1000 palabras.</li>
+                            <li>Hasta 2 (Dos) correcciones posteriores.</li>
+                        </ol>
                     </div>
                 </div>
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Búsqueda Detallada: $ 1.000</h5>
-                        <p class="card-text">
-                            <ol class="m-2">
-                                <li>Charla previa para comentar ideas y cerrar conceptos.</li>
-                                <li>Investigación del Setting en el que se va a desarrollar la historia.</li>
-                                <li>Historia entre 1000 y 1500 palabras.</li>
-                                <li>Hasta 2 (Dos) correcciones posteriores.</li>
-                            </ol>
-                        </p>
+                        <ol class="card-text m-2">
+                            <li>Charla previa para comentar ideas y cerrar conceptos.</li>
+                            <li>Investigación del Setting en el que se va a desarrollar la historia.</li>
+                            <li>Historia entre 1000 y 1500 palabras.</li>
+                            <li>Hasta 2 (Dos) correcciones posteriores.</li>
+                        </ol>
                     </div>
                 </div>
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Búsqueda a Fondo: $ 1.500</h5>
-                        <p class="card-text">
-                            <ol class="m-2">
-                                <li>Charla previa para comentar ideas y cerrar conceptos.</li>
-                                <li>Investigación del Setting en el que se va a desarrollar la historia.</li>
-                                <li>Historia entre 1500 y 2000 palabras.</li>
-                                <li>Hasta 2 (Dos) correcciones posteriores.</li>
-                            </ol>
-                        </p>
+                        <ol class="card-text m-2">
+                            <li>Charla previa para comentar ideas y cerrar conceptos.</li>
+                            <li>Investigación del Setting en el que se va a desarrollar la historia.</li>
+                            <li>Historia entre 1500 y 2000 palabras.</li>
+                            <li>Hasta 2 (Dos) correcciones posteriores.</li>
+                        </ol>
                     </div>
                 </div>
             </article>
@@ -298,65 +288,53 @@
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Hechizos: $ 100</h5>
-                        <p class="card-text">
-                        <ul class="table__ul--style m-2">
+                        <ul class="card-text m-2 table__ul--style">
                             <li>Un PDF con los hechizos de tu personaje de nivel 1 a nivel 10.</li>
                         </ul>
-                        </p>
                     </div>
                 </div>
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Hoja de Personaje: $ 200</h5>
-                        <p class="card-text">
-                            <ul class="table__ul--style m-2">
-                                <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
-                            </ul>
-                        </p>
+                        <ul class="card-text m-2 table__ul--style">
+                            <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Hoja Nivel 8: $ 300</h5>
-                        <p class="card-text">
-                            <ul class="table__ul--style m-2">
-                                <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
-                                <li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 8.</li>
-                            </ul>
-                        </p>
+                        <ul class="card-text m-2 table__ul--style">
+                            <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
+                            <li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 8.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Hoja Nivel 16: $ 600</h5>
-                        <p class="card-text">
-                            <ul class="table__ul--style m-2">
-                                <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
-                                <li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 16.</li>
-                            </ul>
-                        </p>
+                        <ul class="card-text m-2 table__ul--style">
+                            <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
+                            <li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 16.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Hoja Nivel 20: $ 750</h5>
-                        <p class="card-text">
-                            <ul class="table__ul--style m-2">
-                                <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
-                                <li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 20.</li>
-                            </ul>
-                        </p>
+                        <ul class="card-text m-2 table__ul--style">
+                            <li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li>
+                            <li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 20.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card col-16 bg-success text-dark shadow m-3 p-0 card--transform card--border pricing__cardES--size">
                     <div class="card-body p-0">
                         <h5 class="card-title border-bottom border-dark shadow-sm w-100 m-1 ms-0 p-2 ps-4">Personaje Completo: $ 750</h5>
-                        <p class="card-text">
-                            <ul class="table__ul--style m-2">
-                                <li>Un personaje creado de cero.</li>
-                                <li>Elegí un servicio y los adicionales que quieras, y yo me encargo del resto!</li>
-                            </ul>
-                        </p>
+                        <ul class="card-text m-2 table__ul--style">
+                            <li>Un personaje creado de cero.</li>
+                            <li>Elegí un servicio y los adicionales que quieras, y yo me encargo del resto!</li>
+                        </ul>
                     </div>
                 </div>
             </article>
