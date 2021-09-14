@@ -77,144 +77,250 @@
                 <a class="nav-link active position-absolute d-lg-none bg-dark border-primary rounded-pill p-1 m-1 link--color nav__langFont--size border nav__lang--opacity" href="contact.html">English</a>
             </div>
         </header>
-        <h1 class="ms-2">Contacto</h1>
-        <form action="" method="GET" class="row w-100 w-lg-75 mx-auto justify-content-center px-1 p-md-0">
-            <fieldset class="col-12 col-lg-9 text-center m-auto">
-                <legend>Datos Personales</legend>
+        <h1 class="m-3">Contacto</h1>
+        <form action="" method="GET" class="row justify-content-end mx-auto px-3 p-md-0 w-sm-75 w-lg-50 w-xxl-25">
+            <fieldset class="text-center border border-2 bg-success shadow my-2 p-3 pb-2 contact__fieldset--border">
+                <legend class="fw-bold p-1 pt-0">Información Personal</legend>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" name="name" placeholder="Grimund Bronzeheart">
-                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" name="Name" id="name" placeholder="Grimund Bronzeheart" class="form-control text-secondary bg-dark border-secondary shadow contact__cursor--color contact__input--color contact__input--color">
+                    <label for="name" class="text-start text-primary">Nombre Completo:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" name="mail" placeholder="grimund@dwarfmail.com">
-                    <label for="mail">Mail</label>
+                    <input type="email" name="Mail" id="mail" placeholder="grimund@dwarfmail.com" class="form-control text-secondary bg-dark border-secondary shadow contact__cursor--color contact__input--color">
+                    <label for="mail" class="text-start text-primary">Mail:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" name="phone" placeholder="4889-6500">
-                    <label for="phone">Teléfono</label>
+                    <input type="tel" name="Phone" id="phone" placeholder="4889-6500" class="form-control text-secondary bg-dark border-secondary shadow contact__cursor--color contact__input--color">
+                    <label for="phone" class="text-start text-primary">Teléfono:</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" name="cel" placeholder="+54 9 11-2856-2254">
-                    <label for="cel">Celular</label>
+                    <input type="tel" name="Cel" id="cel" placeholder="+54 9 11-2856-2254" class="form-control text-secondary bg-dark border-secondary shadow contact__cursor--color contact__input--color">
+                    <label for="cel" class="text-start text-primary">Celular:</label>
                 </div>
             </fieldset>
-            <fieldset class="text-center text-lg-start col-12 col-lg-4 p-0 m-auto">
-                <legend>Servicios</legend>
-                <div class="mb-1">
-                    <input class="form-check-input" type="radio" name="choose_service" value="QS">
-                    <label class="form-check-label" for="chooseService">Búsqueda Rápida ($500)</label>
-                </div>
-                <div class="mb-1">
-                    <input class="form-check-input" type="radio" name="choose_service" value="DS">
-                    <label class="form-check-label" for="chooseService">Búsqueda Detallada ($1.000)</label>
-                </div>
-                <div class="mb-1">
-                    <input class="form-check-input" type="radio" name="choose_service" value="FS">
-                    <label class="form-check-label" for="chooseService">Búsqueda a Fondo ($1.500)</label>
-                </div>
+            <fieldset class="d-flex flex-wrap justify-content-center text-center border border-2 bg-success shadow my-2 p-3 pb-2 contact__fieldset--border">
+                <legend class="fw-bold p-1 pt-0">Servicios</legend>
+                <label for="qs" class="m-auto p-2">
+                    <input type="radio" name="services" id="qs" value="Quick Search" class="contact__cardRadioElement">
+                    <div class="d-flex flex-column text-secondary border border-secondary bg-dark card--border contact__cardRadio contact__cardRadio--size contact__cardRadio--bg">
+                        <i class="bi bi-info-circle align-self-end pt-1 pe-2" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>Charla previa para comentar ideas y cerrar conceptos.</li><li>Investigación del Setting en el que se va a desarrollar la historia.</li><li>Historia entre 500 y 1000 palabras.</li><li>Hasta 2 (Dos) correcciones posteriores.</li></ol>"></i>
+                        <div class="fs-5 p-3 pt-1">Búsqueda Rápida</div>
+                        <div class="fs-5 p-4 pt-0">$ 500</div>
+                    </div>
+                </label>
+                <label for="ds" class="m-auto p-2">
+                    <input type="radio" name="services" id="ds" value="Detailed Search" class="contact__cardRadioElement">
+                    <div class="d-flex flex-column text-secondary border border-secondary bg-dark card--border contact__cardRadio contact__cardRadio--size contact__cardRadio--bg">
+                        <i class="bi bi-info-circle align-self-end pt-1 pe-2" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>Charla previa para comentar ideas y cerrar conceptos.</li><li>Investigación del Setting en el que se va a desarrollar la historia.</li><li>Historia entre 1000 y 1500 palabras.</li><li>Hasta 2 (Dos) correcciones posteriores.</li></ol>"></i>
+                        <div class="fs-5 p-3 pt-1 px-2">Búsqueda Detallada</div>
+                        <div class="fs-5 p-4 pt-0">$ 1.000</div>
+                    </div>
+                </label>
+                <label for="fs" class="m-auto p-2">
+                    <input type="radio" name="services" id="fs" value="Full on Search" class="contact__cardRadioElement">
+                    <div class="d-flex flex-column text-secondary border border-secondary bg-dark card--border contact__cardRadio contact__cardRadio--size contact__cardRadio--bg">
+                        <i class="bi bi-info-circle align-self-end pt-1 pe-2" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ol><li>Charla previa para comentar ideas y cerrar conceptos.</li><li>Investigación del Setting en el que se va a desarrollar la historia.</li><li>Historia entre 1500 y 2000 palabras.</li><li>Hasta 2 (Dos) correcciones posteriores.</li></ol>"></i>
+                        <div class="fs-5 p-3 pt-1">Búsqueda a Fondo</div>
+                        <div class="fs-5 p-4 pt-0">$ 1.500</div>
+                    </div>
+                </label>
             </fieldset>
-            <fieldset class="text-center text-lg-start col-12 col-lg-5 p-0 m-auto">
-                    <legend>Adicionales</legend>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="BR">
-                        <label class="form-check-label" for="additionals">Hechizos ($100)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="BF">
-                        <label class="form-check-label" for="additionals">Hoja de Personaje ($200)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Personaje Hasta Nivel 8 ($300)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Personaje Hasta Nivel 16 ($600)</label>
-                    </div>
-                    <div class="mb-1">
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Personaje Hasta Nivel 20 ($750)</label>
-                    </div>
-                    <div class="mb-1"> 
-                        <input class="form-check-input" type="checkbox" name="additionals" value="CP">
-                        <label class="form-check-label" for="additionals">Creación de Personaje ($750)</label>
-                    </div>
+            <fieldset class="col-12 d-flex flex-wrap justify-content-center text-center bg-success border border-2 shadow my-2 p-3 pb-3 fieldset--border">
+                <legend class="fw-bold p-1 pt-0">Adicionales</legend>
+                <ul class="mx-2 mb-0 p-2 px-0 contact__cardCheck">
+                    <li class="position-relative bg-dark overflow-hidden border border-secondary shadow card--border contact__cardCheck--size">
+                        <input type="checkbox" name="additionals" id="spells" value="SP" class="d-none contact__cardCheckInput">
+                        <label for="spells" class="radio d-block position-absolute w-100 m-auto conact__cardCheckLabel"></label>
+                        <i class="bi bi-info-circle align-self-end text-secondary pe-2 pt-1 contact__cardCheck--border" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>Un PDF con los hechizos de tu personaje de nivel 1 a nivel 10.</li></ul>"></i>
+                        <div class="position-absolute bg-primary rounded-circle m-auto contact__cardCheck--bg"></div>
+                        <div class="contact__cardCheckBody text-secondary position-relative m-auto w-100">
+                            <div class="position-relative bg-primary rounded-circle contact__cardCheckToggle">
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross contact__cardCheckCross"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross contact__cardCheckCross"></span>
+                            </div>
+                            <div class="mt-3">
+                                <h3 class="fs-5 p-3 pt-0 pb-2 px-2">Hechizos</h3>
+                                <h3 class="fs-5 pt-0">$ 100</h3>
+                            </div>
+                            <div class="position-absolute text-center bg-dark text-secondary px-2 contact__cardCheckCancel">CANCELAR</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mx-2 mb-0 p-2 px-0 contact__cardCheck">
+                    <li class="position-relative bg-dark overflow-hidden border border-secondary shadow card--border contact__cardCheck--size">
+                        <input type="checkbox" name="additionals" id="charSheet" value="CS" class="d-none contact__cardCheckInput">
+                        <label for="charSheet" class="radio d-block position-absolute w-100 m-auto conact__cardCheckLabel conact__cardCheckLabel"></label>
+                        <i class="bi bi-info-circle align-self-end text-secondary pe-2 pt-1 contact__cardCheck--border" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li></ul>"></i>
+                        <div class="position-absolute bg-primary rounded-circle m-auto contact__cardCheck--bg"></div>
+                        <div class="contact__cardCheckBody text-secondary position-relative m-auto w-100">
+                            <div class="position-relative bg-primary rounded-circle contact__cardCheckToggle">
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                            </div>
+                            <div class="mt-3">
+                                <h3 class="fs-5 p-3 pt-0 pb-2 px-2">Hoja de Personaje</h3>
+                                <h3 class="fs-5 pt-0">$ 200</h3>
+                            </div>
+                            <div class="position-absolute text-center bg-dark text-secondary px-2 contact__cardCheckCancel">CANCELAR</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mx-2 mb-0 p-2 px-0 contact__cardCheck">
+                    <li class="position-relative bg-dark overflow-hidden border border-secondary shadow card--border contact__cardCheck--size">
+                        <input type="checkbox" name="additionals" id="level8" value="l8" class="d-none contact__cardCheckInput">
+                        <label for="level8" class="radio d-block position-absolute w-100 m-auto conact__cardCheckLabel"></label>
+                        <i class="bi bi-info-circle align-self-end text-secondary pe-2 pt-1 contact__cardCheck--border" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li><li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 8.</li></ul>"></i>
+                        <div class="position-absolute bg-primary rounded-circle m-auto contact__cardCheck--bg"></div>
+                        <div class="contact__cardCheckBody text-secondary position-relative m-auto w-100">
+                            <div class="position-relative bg-primary rounded-circle contact__cardCheckToggle">
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                            </div>
+                            <div class="mt-3">
+                                <h3 class="fs-5 p-3 pt-0 pb-2 px-2">Hoja Nivel 8</h3>
+                                <h3 class="fs-5 pt-0">$ 300</h3>
+                            </div>
+                            <div class="position-absolute text-center bg-dark text-secondary px-2 contact__cardCheckCancel">CANCELAR</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mx-2 mb-0 p-2 px-0 contact__cardCheck">
+                    <li class="position-relative bg-dark overflow-hidden border border-secondary shadow card--border contact__cardCheck--size">
+                        <input type="checkbox" name="additionals" id="level16" value="l16" class="d-none contact__cardCheckInput">
+                        <label for="level16" class="radio d-block position-absolute w-100 m-auto conact__cardCheckLabel"></label>
+                        <i class="bi bi-info-circle align-self-end text-secondary pe-2 pt-1 contact__cardCheck--border" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li><li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 16.</li></ul>"></i>
+                        <div class="position-absolute bg-primary rounded-circle m-auto contact__cardCheck--bg"></div>
+                        <div class="contact__cardCheckBody text-secondary position-relative m-auto w-100">
+                            <div class="position-relative bg-primary rounded-circle contact__cardCheckToggle">
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                            </div>
+                            <div class="mt-3">
+                                <h3 class="fs-5 p-3 pt-0 pb-2 px-2">Hoja Nivel 16</h3>
+                                <h3 class="fs-5 pt-0">$ 600</h3>
+                            </div>
+                            <div class="position-absolute text-center bg-dark text-secondary px-2 contact__cardCheckCancel">CANCELAR</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mx-2 mb-0 p-2 px-0 contact__cardCheck">
+                    <li class="position-relative bg-dark overflow-hidden border border-secondary shadow card--border contact__cardCheck--size">
+                        <input type="checkbox" name="additionals" id="level20" value="l20" class="d-none contact__cardCheckInput">
+                        <label for="level20" class="radio d-block position-absolute w-100 m-auto conact__cardCheckLabel"></label>
+                        <i class="bi bi-info-circle align-self-end text-secondary pe-2 pt-1 contact__cardCheck--border" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>Un PDF con todos los datos que necesitás para llenar tu hoja de personaje nivel 1. Para que no tengas que tomarte el trabajo de tirar dados o leer libros.</li><li>En el mismo PDF vas a encontrar la progresión nivel a nivel hasta nivel 20.</li></ul>"></i>
+                        <div class="position-absolute bg-primary rounded-circle m-auto contact__cardCheck--bg"></div>
+                        <div class="contact__cardCheckBody text-secondary position-relative m-auto w-100">
+                            <div class="position-relative bg-primary rounded-circle contact__cardCheckToggle">
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                            </div>
+                            <div class="mt-3">
+                                <h3 class="fs-5 p-3 pt-0 pb-2 px-2">Hoja Nivel 20</h3>
+                                <h3 class="fs-5 pt-0">$ 750</h3>
+                            </div>
+                            <div class="position-absolute text-center bg-dark text-secondary px-2 contact__cardCheckCancel">CANCELAR</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mx-2 mb-0 p-2 px-0 contact__cardCheck">
+                    <li class="position-relative bg-dark overflow-hidden border border-secondary shadow card--border contact__cardCheck--size">
+                        <input type="checkbox" name="additionals" id="fullChar" value="FC" class="d-none contact__cardCheckInput">
+                        <label for="fullChar" class="radio d-block position-absolute w-100 m-auto conact__cardCheckLabel"></label>
+                        <i class="bi bi-info-circle align-self-end text-secondary pe-2 pt-1 contact__cardCheck--border" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" title="<ul><li>Un personaje creado de cero.</li><li>Elegí un servicio y los adicionales que quieras, y yo me encargo del resto!</li></ul>"></i>
+                        <div class="position-absolute bg-primary rounded-circle m-auto contact__cardCheck--bg"></div>
+                        <div class="contact__cardCheckBody text-secondary position-relative m-auto w-100">
+                            <div class="position-relative bg-primary rounded-circle contact__cardCheckToggle">
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                                <span class="position-absolute top-50 start-50 bg-secondary contact__cardCheckCross"></span>
+                            </div>
+                            <div class="mt-3">
+                                <h3 class="fs-5 p-3 pt-0 pb-2 px-2">Personaje Completo</h3>
+                                <h3 class="fs-5 pt-0">$750</h3>
+                            </div>
+                            <div class="position-absolute text-center bg-dark text-secondary px-2 contact__cardCheckCancel">CANCELAR</div>
+                        </div>
+                    </li>
+                </ul>
             </fieldset>
-            <fieldset class="d-flex flex-wrap justify-content-between">
-                <legend class="w-100 text-center mt-3">Tu Idea</legend>
-                <div class="d-inline-block w-100 w-lg-50 mb-3 text-center m-auto">
-                    <legend class="text-center">Género</legend>
-                    <input class="form-check-input" type="radio" name="gender" value="male">
-                    <label class="form-check-label pe-1" for="gender">Masculino</label>
-                    <input class="form-check-input" type="radio" name="gender" value="female">
-                    <label class="form-check-label pe-1" for="gender">Femenino</label>
-                    <input class="form-check-input" type="radio" name="gender" value="other">
-                    <label class="form-check-label pe-1" for="gender">Otro</label>
-                    <textarea class="form-control m-auto" name="otro" id="otro" cols="30" rows="10" placeholder="Si Elegiste Otro, y querés, Contame Cual"></textarea>
-                </div>
-                <div class="d-flex flex-column justify-content-around w-100 w-lg-25 m-auto">
-                    <legend class="text-center">Raza</legend>
-                    <select class="form-select mb-3" name="race">
-                        <option value="none"></option>
-                        <option value="dwarf">Enano</option>
-                        <option value="elf">Elfo</option>
-                        <option value="halfling">Mediano</option>
-                        <option value="human">Humano</option>
-                        <option value="dragonborn">Dracónido</option>
-                        <option value="gnome">Gnomo</option>
-                        <option value="halfElf">Medio Elfo</option>
-                        <option value="halfOrc">Medio Orco</option>
-                        <option value="tiefling">Tiefling</option>
-                        <option value="unknown">No Sé</option>
+            <fieldset class="text-center border border-2 bg-success shadow my-2 p-3 pb-2 contact__fieldset--border">
+                <legend class="fw-bold p-1 pt-0">Tu Idea </legend>
+                <div class="d-flex flex-column">
+                    <label for="gender" class="text-start fs-5 fw-bold ms-n1 mb-1">Género:</label>
+                    <select class="form-select text-secondary bg-dark border border-secondary shadow-sm mb-2" name="Gender" id="gender" placeholder="Gender">
+                        <option value="None"></option>
+                        <option value="Female">Femenino</option>
+                        <option value="Male">Masculino</option>
+                        <option value="Other">Otro</option>
                     </select>
-                    <legend class="text-center">Bárbaro</legend>
-                    <select class="form-select mb-3" name="class">
-                        <option value="none"></option>
-                        <option value="barbarian">Bárbaro</option>
-                        <option value="bard">Bardo</option>
-                        <option value="cleric">Clérigo</option>
-                        <option value="druid">Druida</option>
-                        <option value="fighter">Guerrero</option>
-                        <option value="monk">Monje</option>
-                        <option value="paladin">Paladín</option>
-                        <option value="ranger">Explorador</option>
-                        <option value="rogue">Bribón</option>
-                        <option value="sorcerer">Hechicero</option>
-                        <option value="warlock">Brujo</option>
-                        <option value="wizard">Mago</option>
-                        <option value="unknown">No Sé</option>
+                    <textarea name="otro" rows="2" cols="1" id="gender" placeholder="Si elegiste Otro y querés, contame cual." class="form-control text-secondary bg-dark m-auto mb-4 shadow"></textarea>
+                    <label for="race" class="text-start fs-5 fw-bold ms-n1 mb-1">Raza:</label>
+                    <select class="form-select text-secondary bg-dark border border-secondary shadow mb-4" name="Race" id="race" placeholder="Race">
+                        <option value="None"></option>
+                        <option value="Dwarf">Enano</option>
+                        <option value="Elf">Elfo</option>
+                        <option value="Halfling">Mediano</option>
+                        <option value="Human">Humano</option>
+                        <option value="Dragonborn">Dracónido</option>
+                        <option value="Gnome">Gnomo</option>
+                        <option value="HalfElf">Medio Elfo</option>
+                        <option value="HalfOrc">Medio Orco</option>
+                        <option value="Tiefling">Tiefling</option>
+                        <option value="Unknown">No Sé</option>
                     </select>
-                    <legend class="text-center">Trasfondo</legend>
-                    <select class="form-select mb-3" name="background">
-                        <option value="none"></option>
-                        <option value="acolyte">Acólito</option>
-                        <option value="charlatan">Charlatán</option>
-                        <option value="criminal">Criminal</option>
-                        <option value="entertainer">Animador</option>
-                        <option value="folkHero">Héroe Popular</option>
-                        <option value="guildArtisan">Artesano del Gremio</option>
-                        <option value="hermit">Hermitaño</option>
-                        <option value="noble">Noble</option>
-                        <option value="outlander">Forastero</option>
-                        <option value="sage">Sabio</option>
-                        <option value="sailor">Navegante</option>
-                        <option value="soldier">Soldado</option>
-                        <option value="urchin">Callejero</option>
-                        <option value="unknown">No Sé</option>
+                    <label for="class" class="text-start fs-5 fw-bold ms-n1 mb-1">Clase:</label>
+                    <select class="form-select text-secondary bg-dark border border-secondary shadow mb-4" id="class" name="Class">
+                        <option value="None"></option>
+                        <option value="Barbarian">Barbaro</option>
+                        <option value="Bard">Bardo</option>
+                        <option value="Cleric">Clérigo</option>
+                        <option value="Druid">Druida</option>
+                        <option value="Fighter">Guerrero</option>
+                        <option value="Monk">Monje</option>
+                        <option value="Paladin">Paladín</option>
+                        <option value="Ranger">Explorador</option>
+                        <option value="Rogue">Bribón</option>
+                        <option value="Sorcerer">Hechizero</option>
+                        <option value="Warlock">Brujo</option>
+                        <option value="Wizard">Mago</option>
+                        <option value="Unknown">No sé</option>
+                    </select>
+                    <label for="background" class="text-start fs-5 fw-bold ms-n1 mb-1">Trasfondo:</label>
+                    <select class="form-select text-secondary bg-dark border border-secondary shadow mb-4" id="background" name="Background">
+                        <option value="None"></option>
+                        <option value="Acolyte">Acólito</option>
+                        <option value="Charlatan">Charlatán</option>
+                        <option value="Criminal">Criminal</option>
+                        <option value="Entertainer">Animador</option>
+                        <option value="FolkHero">Héroe Popular</option>
+                        <option value="GuildArtisan">Artesano del Gremio</option>
+                        <option value="Hermit">Hermitaño</option>
+                        <option value="Noble">Noble</option>
+                        <option value="Outlander">Forastero</option>
+                        <option value="Sage">Sabio</option>
+                        <option value="Sailor">Marinero</option>
+                        <option value="Soldier">Soldado</option>
+                        <option value="Urchin">Callejero</option>
+                        <option value="Unknown">No Sé</option>
                     </select>
                 </div>
-                <legend class="w-100 text-center">Escribí Cualquier Cosa que Quieras Agregar:</legend>
-                <textarea class="form-control" name="idea" id="other" cols="30" rows="10" placeholder="Ya sabés algo de tu héroe? Querés usar alguna versión alternativa de raza o trasfondo? Cualquier cosa que quieras agregar, dejala acá!"></textarea>
+                <label for="idea" class="text-start fs-5 fw-bold ms-n1 mb-1">¿Querés Agregar Algo?</label>
+                <textarea class="form-control text-secondary bg-dark shadow m-auto mb-3" name="Idea" id="idea" rows="6" cols="1" placeholder="¿Ya sabés algo de tu héroe? ¿Querés jugar características de Raza o Trasfondo alternativas? ¿Algo más que quieras agregar? ¡Escribilo acá!"></textarea>
             </fieldset>
-            <input class="m-2 p-0 btn btn-primary text-dark fw-bold form__btn--size" type="reset" value="Borrar">
-            <input class="m-2 p-0 btn btn-dark text-primary fw-bold form__btn--size" type="submit" value="Enviar">
+            <input class="btn btn-primary text-dark fw-bold m-2 p-0 form__btn--size button--border" type="reset" value="Borrar">
+            <input class="btn btn-dark text-primary fw-bold m-2 p-0 form__btn--size button--border" type="submit" value="Enviar">
         </form>
-        <footer class="d-flex flex-wrap justify-content-between p-1 bg-dark text-primary align-items-center">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center bg-dark text-primary p-1">
             <a href="inicio.html"><img src="img/wax.svg" alt="Logo" class="logo--size"></a>
             <a href="mapaSitio.html"  class="text-decoration-none fw-bolder link--color">Mapa del Sitio</a>
             <a href="https://www.instagram.com/wan.lib/" class="link--color"><i class="bi bi-instagram fs-3"></i></a>
             <strong class="w-100 text-end footer__text--size footer__font--size">Desarrollado por Diego Gabrielli</strong>
         </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script> 
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </body>
 </html>

@@ -1,6 +1,9 @@
-.map__link--border{
-    text-shadow: -1px 0 rgb(38, 38, 38), 0 1px rgb(38, 38, 38), 1px 0 rgb(38, 38, 38), 0 -1px rgb(38, 38, 38);
-}
 .map__link--color:visited{
     color: rgba(216, 153, 138, 1);
+}
+.siteMap--size{
+    width: 250px;
+}
+.siteMap--border{
+    border-radius: 30px 0;
 }
